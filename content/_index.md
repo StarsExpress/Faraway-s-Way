@@ -4,7 +4,7 @@ toc: false
 ---
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin: 0.5rem 0;">
-  <img src="/images/profile.jpg" alt="Yuan Jack Yao" style="width: 150px; height: 200px; border-radius: 8px; object-fit: cover;" />
+  <img src="images/profile.jpg" alt="Yuan Jack Yao" style="width: 150px; height: 200px; border-radius: 8px; object-fit: cover;" />
   <div style="display: flex; gap: 1.5rem; align-items: center; font-size: 1rem;">
     <a href="https://github.com/StarsExpress" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.4rem; text-decoration: none;">
       {{< icon "github" >}} GitHub
