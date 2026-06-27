@@ -1,7 +1,8 @@
-# Hugo output
 public/
 resources/
 .hugo_build.lock
-
-# Editor
 .vscode/
+__pycache__/
+*.log
+.claude
+.DS_Store
