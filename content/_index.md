@@ -30,15 +30,15 @@ sidebar:
   <img src="images/profile.jpg" alt="Yuan Jack Yao" style="width: 200px; height: 250px; border-radius: 8px; object-fit: cover; flex-shrink: 0;" />
   <div class="hero-text" style="display: flex; flex-direction: column; gap: 0.75rem; flex: 1; padding-top: 0.25rem;">
     <p style="font-size: 18px; line-height: 1.6;">
-      In Chinese, my first & last name Yuan Yao are placed as Yao Yuan.<br/>
-      The adjective faraway in Chinese is written as: yao yuan～ <br/>
+      In Chinese, my first & last name Yuan Yao are placed as 『Yao Yuan』.<br/>
+      The adjective faraway in Chinese is written as: 『yao yuan』～ <br/>
       Back to good old school days, I had the 🎙️homophone nickname "Faraway" 😉
     </p>
     <p style="font-size: 18px; line-height: 1.6;">
-      A big hobby of mine is realizing delivery for AI/ML systems based on flexible plus scalable designs
-      and clear communications. It was what I did as a full-time Data Scientist in Shanghai, China 🇨🇳<br/><br/>
+      A big passion of mine is building & delivering AI/ML systems based on flexible plus scalable designs,
+      and clear communication. It was what I did as a full-time Data Scientist in Shanghai, China 🇨🇳<br/><br/>
       Bringing it into U.S. 🇺🇸, I am eager to deploy user-friendly Gen AI pipelines to closely connect
-      supplies & demands, especially for conversational AI applications. Welcome to chat if you are interested 🤓
+      supplies & demands, especially for conversational AI applications. Welcome to chat 🤓
     </p>
   <div class="hero-links" style="display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; font-size: 1rem;">
       <a href="https://www.linkedin.com/in/Yuan-Jack-Yao" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 1.2rem;">
@@ -54,7 +54,7 @@ sidebar:
   </div>
 </div>
 
-## Hobby-Driven
+## Some Hobbies
 
 {{< cards cols="2" >}}
   {{< card link="monkeyjob" title="🎰MonkeyJOB" subtitle="🎰JOB: Jack's Online Blackjack — 🎮Casino-style UI web Blackjack game." image="images/job_logo.png" imageStyle="width: 100%; height: 180px; object-fit: contain; display: block; background: #111827;" >}}
