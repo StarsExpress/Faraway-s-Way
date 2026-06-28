@@ -1,4 +1,5 @@
-/* Navbar: visual divider before Faraway Life */
+/* Navbar: visual divider before Faraway Life. */
+
 a[href^="/faraway-life"] {
   position: relative;
   margin-left: 0.75rem;

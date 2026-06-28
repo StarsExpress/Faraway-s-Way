@@ -1,6 +1,6 @@
 ---
 title: Open Source Contributions
-weight: 3
+weight: 1
 toc: true
 sidebar:
   hide: true

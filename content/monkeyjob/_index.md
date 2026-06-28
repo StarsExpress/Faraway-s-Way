@@ -45,12 +45,6 @@ sidebar:
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
 </div>
 
-<div id="lightbox" onclick="this.style.display='none'"
-     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out;">
-  <img id="lb-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
-</div>
-
 #### 🍾 Popups: Income Flow & Bilingual Rules 🔆
 
 <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
@@ -66,12 +60,6 @@ sidebar:
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
        onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(217,119,6,0.35)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
-</div>
-
-<div id="lightbox" onclick="this.style.display='none'"
-     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out;">
-  <img id="lb-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
 </div>
 
 
@@ -115,3 +103,9 @@ And this actually gives me motivation and fun for designing this online game �
 Alright, the above is some fun facts about casino terminology and why I set up this game.
 
 Now: which Blackjack rule is the root cause for house edge, despite 🇲🇴 casinos giving so many friendly rules?
+
+<div id="lightbox" onclick="this.style.display='none'"
+     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out;">
+  <img id="lb-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
+</div>

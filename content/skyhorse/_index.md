@@ -21,17 +21,28 @@ sidebar:
     <span>↗</span>
 </a>
 
+<div class="hero-intro" style="display: flex; flex-direction: row; align-items: flex-start; gap: 1rem; width: 100%; margin: 1rem 0 0;">
+  <img src="submissions_history.png" alt="Submissions History"
+       style="width: 50px; height: 50px; object-fit: cover; border-radius: 10px; cursor: pointer; flex-shrink: 0; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(6,182,212,0.5); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+  <div class="hero-text" style="display: flex; flex-direction: column; gap: 0.75rem; flex: 1; padding-top: 0.25rem;">
+    <p style="font-size: 18px; line-height: 1.6;">
+      Still very hard to believe how all these<br/>4,699 submissions in 2024 came......
+    </p>
+  </div>
+</div>
 
-## How Did SkyHorse Appear 🤔
-
-In Chinese, **horse (马) and code (码) has the same pronunciation "ma",** and their shapes look alike.
-
-A Chinese phrase called 天马行空 combines sky (天) and horse (马) to **metaphor creativity.**
+| **Bilingual Reading** | **Bilingual Code**    | **Framework**      |
+|---------------------|-----------------------|--------------------|
+| 🔵English + 🔴中文    | <img src="https://skillicons.dev/icons?i=python,cpp" /> | **Docusaurus️📜** |
 
 
 ## 📖 Blog Guide
 
-#### 🗂️ Home Display & Double Indices 📍
+#### 🗂️️ Home Display & Double Indices 📍
 
 Each home page card represents an article for a LeetCode problem.
 
@@ -42,20 +53,14 @@ Catalog integrates two indices: **outer index on Data Structures & Algorithms to
        style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(6,182,212,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
-       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(217,119,6,0.35)'"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
   <img src="double_indices.png" alt="Double Indices"
        style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(6,182,212,0.5); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
-       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(217,119,6,0.35)'"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
-</div>
-
-<div id="lightbox" onclick="this.style.display='none'"
-     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out;">
-  <img id="lb-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
 </div>
 
 #### Bilingual: 🔠English & 中文🀄
@@ -69,20 +74,14 @@ Entire blog posts are also **bilingual: English + 中文.** Top right toggle is 
        style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(6,182,212,0.5); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
-       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(217,119,6,0.35)'"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
   <img src="bilingual_chinese.png" alt="Bilingual Chinese"
        style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(6,182,212,0.5); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
-       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(217,119,6,0.35)'"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
-</div>
-
-<div id="lightbox" onclick="this.style.display='none'"
-     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out;">
-  <img id="lb-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
 </div>
 
 #### Programming: 🅿️Python & 🅒C++
@@ -96,21 +95,22 @@ Code examples offer **Python and C++ by switchable tabs.**
        style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(6,182,212,0.5); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
-       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(217,119,6,0.35)'"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
   <img src="code_cpp.png" alt="C++ Code"
        style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(6,182,212,0.5); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
-       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(217,119,6,0.35)'"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
 </div>
 
-<div id="lightbox" onclick="this.style.display='none'"
-     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out;">
-  <img id="lb-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
-</div>
+
+## How I Created SkyHorse 🤔
+
+In Chinese, **horse (马) and code (码) has the same pronunciation "ma",** and their shapes look alike.
+
+A Chinese phrase called 天马行空 combines sky (天) and horse (马) to **metaphor creativity.**
 
 
 ## SkyHorse Origin 🎬
@@ -138,20 +138,13 @@ but I know for sure that problem-solving has become a big part of who I am.
 
 
 ## Present: Keep Climbing 🧗
-
 <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
   <img src="repo_history.png" alt="Repo History"
-       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+       style="width: 26%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(6,182,212,0.5); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
-       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(217,119,6,0.35)'"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
-</div>
-
-<div id="lightbox" onclick="this.style.display='none'"
-     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out;">
-  <img id="lb-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
 </div>
 
 One day, as I casually scrolled through my repo's history
@@ -165,3 +158,9 @@ that only truly appeared after tackling a problem for 10th time.
 
 Though these growths arrived late, perhaps this is exactly why they are
 much like a fine wine that only grows with time 😄
+
+<div id="lightbox" onclick="this.style.display='none'"
+     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out;">
+  <img id="lb-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
+</div>
