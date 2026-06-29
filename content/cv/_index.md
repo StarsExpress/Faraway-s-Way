@@ -6,6 +6,22 @@ sidebar:
   hide: true
 ---
 
+<style>
+  .exp-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  @media (max-width: 600px) {
+    .exp-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
+
 
 ## Contact
 <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem;">
@@ -35,11 +51,11 @@ sidebar:
 ## Work Experiences
 
 [//]: # (GA Tech.)
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+<div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700;">Georgia Institute of Technology</span>
   <span style="font-size: 16px; font-weight: 700;">Aug 2026～Dec 2026</span>
 </div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+<div class="exp-row" style="margin-bottom: 8px;">
   <span style="font-size: 15px; font-style: italic;">Incoming Grad Teaching Assistant @ CS 6604 Conversational AI</span>
   <span style="font-size: 15px; font-style: italic;">Atlanta, Georgia</span>
 </div>
@@ -47,11 +63,11 @@ sidebar:
 <br>
 
 [//]: # (Walmart.)
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+<div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700;">Walmart</span>
   <span style="font-size: 16px; font-weight: 700;">Jun 2026～Aug 2026</span>
 </div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+<div class="exp-row" style="margin-bottom: 8px;">
   <span style="font-size: 15px; font-style: italic;">Data Scientist III Intern @ Sam's Club AI Acceleration Team</span>
   <span style="font-size: 15px; font-style: italic;">Bentonville, Arkansas</span>
 </div>
@@ -64,11 +80,11 @@ sidebar:
 <br>
 
 [//]: # (SUEZ.)
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+<div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700;">SUEZ</span>
   <span style="font-size: 16px; font-weight: 700;">May 2022～Sep 2024</span>
 </div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+<div class="exp-row" style="margin-bottom: 8px;">
   <span style="font-size: 15px; font-style: italic;">Data Scientist @ Smart & Environmental Solutions (SES) China</span>
   <span style="font-size: 15px; font-style: italic;">Shanghai, China</span>
 </div>
@@ -90,7 +106,7 @@ sidebar:
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
   <li>Applied <strong>Joblib</strong> on Linux and
-  <strong>saved 20% processing time</strong> of 12 air compressors’ clustering.</li>
+  <strong>saved 20% processing time</strong> of 12 air compressors' clustering.</li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
   <li>Designed an <strong>automated MySQL ETL pipeline</strong>
@@ -100,16 +116,16 @@ sidebar:
 <br>
 
 [//]: # (Pramerica Life Insurance.)
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+<div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700;">Pramerica Life Insurance</span>
   <span style="font-size: 16px; font-weight: 700;">Sep 2020～Apr 2022</span>
 </div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+<div class="exp-row" style="margin-bottom: 8px;">
   <span style="font-size: 15px; font-style: italic;">Sep～Dec 2020: Intern; Dec 2020～Apr 2022: Data Management Trainee</span>
   <span style="font-size: 15px; font-style: italic;">Shanghai, China</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Built the company’s first BI sales data platform into both PC and WeChat mini programs.</li>
+  <li>Built the company's first BI sales data platform into both PC and WeChat mini programs.</li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
   <li>Developed multidimensional filtering, groupby & deduplication functions that saved 50% operation time.</li>
@@ -170,11 +186,11 @@ sidebar:
 ## Education
 
 [//]: # (GA Tech.)
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+<div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700;">Georgia Institute of Technology</span>
   <span style="font-size: 16px; font-weight: 700;">Aug 2025～Dec 2026</span>
 </div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+<div class="exp-row" style="margin-bottom: 8px;">
   <span style="font-size: 15px; font-style: italic;">MSc Analytics
   @ <strong>School of Computational Science and Engineering</strong></span>
   <span style="font-size: 15px; font-style: italic;">Atlanta, Georgia</span>
@@ -189,11 +205,11 @@ sidebar:
 <br>
 
 [//]: # (UCSD.)
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+<div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700;">University of California, San Diego</span>
   <span style="font-size: 16px; font-weight: 700;">Sep 2019～Sep 2020</span>
 </div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+<div class="exp-row" style="margin-bottom: 8px;">
   <span style="font-size: 15px; font-style: italic;">Master of Finance @ Rady School of Management</span>
   <span style="font-size: 15px; font-style: italic;">La Jolla, California</span>
 </div>
@@ -201,11 +217,11 @@ sidebar:
 <br>
 
 [//]: # (NTU.)
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+<div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700;">National Taiwan University</span>
   <span style="font-size: 16px; font-weight: 700;">Sep 2014～Jun 2018</span>
 </div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+<div class="exp-row" style="margin-bottom: 8px;">
   <span style="font-size: 15px; font-style: italic;">Department of Economics @ College of Social Sciences</span>
   <span style="font-size: 15px; font-style: italic;">Taipei, Taiwan</span>
 </div>
