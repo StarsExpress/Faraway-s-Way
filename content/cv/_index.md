@@ -32,7 +32,7 @@ sidebar:
 </div>
 
 
-## Experiences
+## Work Experiences
 
 [//]: # (GA Tech.)
 <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
@@ -116,7 +116,7 @@ sidebar:
 </ul>
 
 
-## Techniques
+## Skills Bag
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1rem; align-items: stretch;">
 
