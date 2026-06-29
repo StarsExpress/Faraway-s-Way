@@ -39,7 +39,7 @@ sidebar:
   </a>
   <a href="mailto:yyao411@gatech.edu"
      style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1.1rem; border: 1.5px solid currentColor; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
-    ✉️ yyao411@gatech.edu
+    ✉️ Email
   </a>
   <a href="tel:+14045286519"
      style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1.1rem; border: 1.5px solid currentColor; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
@@ -156,9 +156,6 @@ sidebar:
   </div>
 </div>
 
-[//]: # (3 on top row and 3 on bottom row.)
-<br>
-
 <div style="padding: 1rem 1.25rem; border: 1px solid rgba(128,128,128,0.25); border-radius: 8px;">
   <div style="font-weight: 600; margin-bottom: 0.5rem;">☁️ Cloud &amp; Data Platforms</div>
   <div style="display: flex; align-items: center; gap: 8px;">
@@ -174,9 +171,9 @@ sidebar:
 </div>
 
 <div style="padding: 1rem 1.25rem; border: 1px solid rgba(128,128,128,0.25); border-radius: 8px;">
-  <div style="font-weight: 600; margin-bottom: 0.5rem;">👀 Frontend & Visualization</div>
+  <div style="font-weight: 600; margin-bottom: 0.5rem;">👀 Web & Visualization</div>
   <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://skillicons.dev/icons?i=fastapi,javascript,css,html,flask" height="32" alt="Frontend & Visualization" />
+    <img src="https://skillicons.dev/icons?i=fastapi,javascript,css,html,flask" height="32" alt="Web & Visualization" />
   </div>
 </div>
 

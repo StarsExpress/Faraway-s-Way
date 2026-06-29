@@ -1,15 +1,20 @@
 ---
-title: Technical Notes
+title: 🕯Sudden Thoughts️
 weight: 3
 toc: false
 sidebar:
   hide: true
 ---
 
-Original write-ups on topics I found worth unpacking. Not textbook recaps — the focus is on *why* things are designed the way they are.
+Maybe life is like this: many ideas are actually the natural product of time and experiences.
+
+It's just that when these ideas come, they look as if suddenly rising up out of nowhere.
+
+
+[//]: # (  {{< card link="lstm" title="LSTM" subtitle="LSTM Structure Thoughts" icon="chip" >}})
+[//]: # ()
+[//]: # (  {{< card link="protein_guide" title="ProteinGuide' Theorem" subtitle="ProteinGuide" icon="chart-bar" >}})
 
 {{< cards >}}
-  {{< card link="lstm" title="LSTM" subtitle="各公式設計解讀" icon="chip" >}}
-  {{< card link="bayes" title="Bayes' Theorem" subtitle="Bayes Theorem 解讀" icon="chart-bar" >}}
-  {{< card link="leetcode-contributions" title="Open Source Contributions" subtitle="Merged PRs to doocs/leetcode & TheAlgorithms/Python" icon="academic-cap" >}}
+  {{< card link="leetcode_wiki" title="LeetCode Wiki" subtitle="Some Activities" icon="book-open" >}}
 {{< /cards >}}

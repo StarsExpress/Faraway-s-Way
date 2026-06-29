@@ -1,5 +1,5 @@
 ---
-title: "🏔️ Faraway Life 🌊"
+title: "️🌊Faraway Life"
 weight: 5
 toc: false
 sidebar:
