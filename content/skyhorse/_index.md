@@ -9,28 +9,28 @@ sidebar:
 
 <a href="https://starsexpress.github.io/SkyHorse/" target="_blank" rel="noopener noreferrer"
      style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 1.75rem; box-sizing: border-box;
-     background: linear-gradient(135deg, #b91c1c, #d97706);
-     color: #fff; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 17px;
-     box-shadow: 0 4px 14px rgba(217,119,6,0.45), 0 0 0 1px rgba(255,215,120,0.25) inset;
+     background: linear-gradient(135deg, #0e7490, #06b6d4);
+     color: #1a1a1a; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 17px;
+     box-shadow: 0 4px 14px rgba(6,182,212,0.45), 0 0 0 1px rgba(165,243,252,0.25) inset;
      transition: transform 0.15s ease, box-shadow 0.15s ease;"
-     onmouseover="this.style.transform='translateY(-2px) scale(1.03)'; this.style.boxShadow='0 8px 22px rgba(217,119,6,0.6), 0 0 0 1px rgba(255,215,120,0.35) inset'"
-     onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 14px rgba(217,119,6,0.45), 0 0 0 1px rgba(255,215,120,0.25) inset'">
+     onmouseover="this.style.transform='translateY(-2px) scale(1.03)'; this.style.boxShadow='0 8px 22px rgba(6,182,212,0.6), 0 0 0 1px rgba(165,243,252,0.35) inset'"
+     onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 14px rgba(6,182,212,0.45), 0 0 0 1px rgba(165,243,252,0.25) inset'">
     <span>🐴</span>
     <span>Fly ⏭⇉ Sky</span>
     <span>🏙️</span>
     <span>↗</span>
 </a>
 
-<div class="hero-intro" style="display: flex; flex-direction: row; align-items: flex-start; gap: 1rem; width: 100%; margin: 1rem 0 0;">
+<div class="hero-intro" style="display: flex; flex-direction: row; align-items: center; gap: 1rem; width: 100%; margin: 1rem 0 0;">
   <img src="submissions_history.png" alt="Submissions History"
        style="width: 50px; height: 50px; object-fit: cover; border-radius: 10px; cursor: pointer; flex-shrink: 0; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(6,182,212,0.5); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
        onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
-  <div class="hero-text" style="display: flex; flex-direction: column; gap: 0.75rem; flex: 1; padding-top: 0.25rem;">
+  <div class="hero-text" style="display: flex; flex-direction: column; gap: 0.75rem; flex: 1;">
     <p style="font-size: 18px; line-height: 1.6;">
-      Still very hard to believe how all these<br/>4,699 submissions in 2024 came......
+      Still very hard to believe how 4,699 submissions in 2024 came......
     </p>
   </div>
 </div>
@@ -106,7 +106,7 @@ Code examples offer **Python and C++ by switchable tabs.**
 </div>
 
 
-## How I Created SkyHorse 🤔
+## How I Set SkyHorse 🤔
 
 In Chinese, **horse (马) and code (码) has the same pronunciation "ma",** and their shapes look alike.
 
