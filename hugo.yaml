@@ -8,6 +8,16 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ['$$', '$$']
+            - ['\[', '\]']
+          inline:
+            - ['$', '$']
+            - ['\(', '\)']
   highlight:
     noClasses: false
 
@@ -22,7 +32,7 @@ menu:
     - name: "📕Notes"
       pageRef: /notes
       weight: 3
-    - name: "💼CV"
+    - name: "💼Résumé"
       pageRef: /cv
       weight: 4
     - name: "🌊Faraway Life"
@@ -32,6 +42,7 @@ menu:
       weight: 6
       params:
         type: search
+        math: true
     - name: GitHub
       weight: 7
       url: "https://github.com/StarsExpress"

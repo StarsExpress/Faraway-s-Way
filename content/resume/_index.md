@@ -193,10 +193,10 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Atlanta, Georgia</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>GPA 4.0/4.0:
-  <strong>Conversational AI, Natural Language, Machine Learning, ML in Computational Biology</strong>,
-  Data & Visual Analytics, Computing for Data Analysis, Nonparametric Data Analysis,
-  Business Analytics Practicum, Data Analytics in Business</li>
+  <li>GPA 4.0/4.0<br>
+  <strong>Conversational AI, Natural Language, Machine Learning, ML in Computational Biology</strong>, Data & Visual Analytics,
+  Computing for Data Analysis, Nonparametric Data Analysis, Business Analytics Practicum, Data Analytics in Business
+  </li>
 </ul>
 
 <br>

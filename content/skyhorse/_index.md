@@ -107,7 +107,6 @@ Code examples offer **Python and C++ by switchable tabs.**
 
 
 ## How I Set SkyHorse 🤔
-
 In Chinese, **horse (马) and code (码) has the same pronunciation "ma",** and their shapes look alike.
 
 A Chinese phrase called 天马行空 combines sky (天) and horse (马) to **metaphor creativity.**

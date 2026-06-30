@@ -6,7 +6,8 @@ sidebar:
   hide: true
 ---
 
-Four years working in Shanghai — weekends and holidays spent moving between cities. These are a few of the places that stuck.
+
+Walking around as far away as I can to grasp every corner that draws my curiosity.
 
 <!-- TODO: 在下方加入精選照片，格式參考：
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
