@@ -33,7 +33,7 @@ menu:
       pageRef: /notes
       weight: 3
     - name: "💼Résumé"
-      pageRef: /cv
+      pageRef: /resume
       weight: 4
     - name: "🌊Faraway Life"
       pageRef: /faraway-life
