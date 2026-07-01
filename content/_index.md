@@ -54,7 +54,7 @@ sidebar:
   </div>
 </div>
 
-## Some Hobbies
+## Some Hobbies Deployed
 
 {{< cards cols="2" >}}
   {{< card link="monkeyjob" title="🎰MonkeyJOB" subtitle="🎰JOB: Jack's Online Blackjack — 🎮Casino-style UI web Blackjack game." image="images/job_logo.png" imageStyle="width: 100%; height: 180px; object-fit: contain; display: block; background: #111827;" >}}

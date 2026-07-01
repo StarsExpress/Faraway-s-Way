@@ -1,0 +1,198 @@
+{{ define "main" }}
+  <div class='hx:mx-auto hx:flex hextra-max-page-width'>
+    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true) }}
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
+        {{ partial "breadcrumb.html" (dict "page" . "enable" true) }}
+
+        {{ if .Title }}
+        <h1 class="hx:mt-2 hx:text-4xl hx:font-bold">{{ .Title }}</h1>
+        {{ end }}
+
+        {{ with .Content }}
+        <div class="content hx:mb-2">{{ . }}</div>
+        {{ end }}
+
+        {{/* ── Collect unique tags from all child pages ── */}}
+        {{ $allTags := slice }}
+        {{ range .Pages }}
+          {{ range .Params.tags }}
+            {{ $allTags = $allTags | append . }}
+          {{ end }}
+        {{ end }}
+        {{ $uniqueTags := $allTags | uniq | sort }}
+
+        {{/* ── Filter bar ── */}}
+        <div id="flw-filter" class="flw-filter">
+          <button class="flw-btn flw-btn--active" data-tag="__all__">All</button>
+          {{ range $uniqueTags }}
+          <button class="flw-btn" data-tag="{{ . }}">{{ . }}</button>
+          {{ end }}
+        </div>
+
+        {{/* ── City card grid ── */}}
+        {{ $gradients := slice
+          "linear-gradient(135deg,#1a237e,#0288d1)"
+          "linear-gradient(135deg,#006064,#26a69a)"
+          "linear-gradient(135deg,#bf360c,#f57f17)"
+          "linear-gradient(135deg,#4a148c,#8e24aa)"
+          "linear-gradient(135deg,#1b5e20,#43a047)"
+          "linear-gradient(135deg,#880e4f,#e91e63)"
+        }}
+
+        <div id="flw-grid" class="flw-grid">
+          {{ range $i, $page := .Pages }}
+          {{ $tags    := $page.Params.tags | default slice }}
+          {{ $tagsCSV := delimit $tags "," }}
+          {{ $grad    := index $gradients (mod $i (len $gradients)) }}
+          {{ $cover   := $page.Params.cover }}
+
+          <a href="{{ $page.RelPermalink }}" class="flw-card" data-tags="{{ $tagsCSV }}">
+            <div class="flw-card__img"
+              {{ if $cover }}
+                style="background-image:url('{{ $cover }}'); background-size:cover; background-position:center;"
+              {{ else }}
+                style="background:{{ $grad }};"
+              {{ end }}>
+            </div>
+            <div class="flw-card__body">
+              <p class="flw-card__title">{{ $page.Title }}</p>
+              <div class="flw-card__tags">
+                {{ range $tags }}
+                <span class="flw-tag">{{ . }}</span>
+                {{ end }}
+              </div>
+            </div>
+          </a>
+          {{ end }}
+        </div>
+
+      </main>
+    </article>
+  </div>
+
+  <style>
+    /* ── Filter bar ── */
+    .flw-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1.25rem 0 1rem;
+    }
+    .flw-btn {
+      padding: 0.3rem 0.9rem;
+      border-radius: 9999px;
+      border: 1.5px solid #9ca3af;
+      background: transparent;
+      cursor: pointer;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: #6b7280;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .flw-btn:hover,
+    .flw-btn--active {
+      background: #374151;
+      color: #fff;
+      border-color: #374151;
+    }
+    .dark .flw-btn {
+      color: #9ca3af;
+      border-color: #4b5563;
+    }
+    .dark .flw-btn:hover,
+    .dark .flw-btn--active {
+      background: #e5e7eb;
+      color: #111;
+      border-color: #e5e7eb;
+    }
+
+    /* ── Grid ── */
+    .flw-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    /* ── Card ── */
+    .flw-card {
+      text-decoration: none !important;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,.12);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+    }
+    .dark .flw-card {
+      background: #1f2937;
+      box-shadow: 0 2px 8px rgba(0,0,0,.45);
+    }
+    .flw-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 28px rgba(0,0,0,.18);
+    }
+
+    .flw-card__img {
+      height: 160px;
+      flex-shrink: 0;
+    }
+    .flw-card__body {
+      padding: 0.85rem 1rem 1rem;
+      flex: 1;
+    }
+    .flw-card__title {
+      margin: 0 0 0.5rem !important;
+      font-size: 1.05rem !important;
+      font-weight: 700 !important;
+      color: #111827;
+      line-height: 1.3;
+    }
+    .dark .flw-card__title { color: #f3f4f6; }
+
+    .flw-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+    .flw-tag {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      background: #e5e7eb;
+      color: #374151;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .dark .flw-tag {
+      background: #374151;
+      color: #d1d5db;
+    }
+  </style>
+
+  <script>
+    (function () {
+      const btns  = document.querySelectorAll('#flw-filter .flw-btn');
+      const cards = document.querySelectorAll('#flw-grid .flw-card');
+
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          btns.forEach(function (b) { b.classList.remove('flw-btn--active'); });
+          btn.classList.add('flw-btn--active');
+
+          var tag = btn.dataset.tag;
+          cards.forEach(function (card) {
+            if (tag === '__all__') {
+              card.style.display = '';
+            } else {
+              var tags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+              card.style.display = tags.indexOf(tag) !== -1 ? '' : 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+{{ end }}

@@ -26,7 +26,7 @@ In one month, I had
 
 #### My Merged PRs Compared To LeetCode Wiki Original Solutions
 
-##### 3 Efficiency Enhancement
+##### Efficiency Enhancement: 3
 • [No.2454 Next Greater Element IV:](https://github.com/doocs/leetcode/pull/5202)
 achieved **$O(n)$ time by double stacks**, reducing from global sorting and ordered set of $O(nlogn)$ time.
 
@@ -36,15 +36,19 @@ delivered **the repo’s first tutorial for No.3430**, achieving both time and s
 • [No.1793 Maximum Score of a Good Subarray:](https://github.com/doocs/leetcode/pull/5215)
 optimized **$O(1)$ space with greedy two pointers**, reducing from stack’s $O(n)$ space.
 
-##### 4 Different Style Same Efficiency
+##### Different Style Same Efficiency: 4
 • [No.768 Max Chunks To Make Sorted II:](https://github.com/doocs/leetcode/pull/5214)
 wrote **$O(n)$ time method by prefix max & suffix min**, complementing original solution of $O(n)$ stack.
 
 • [No.315 Count of Smaller Numbers After Self:](https://github.com/doocs/leetcode/pull/5229)
-provided **$O(nlogn)$ time answer by merge sort**, avoiding complex data structure as well as complementing original solutions' $O(nlogn)$ segment tree and Fenwick tree.
+provided $O(nlogn)$ time answer by merge sort, **offering a more implementation-friendly data structure** to complement original solutions' $O(nlogn)$ segment tree and Fenwick tree.
 
 • [No.2736. Maximum Sum Queries:](https://github.com/doocs/leetcode/pull/5234)
-gave **$O(nlogn)$ time complexity with sorting, stack and binary search**, complementing original solution's $O(nlogn)$ Fenwick tree.
+gave $O(nlogn)$ time complexity with **sorting, stack and binary search**, complementing original solution's $O(nlogn)$ Fenwick tree.
 
 • [No.987. Vertical Order Traversal of a Binary Tree:](https://github.com/doocs/leetcode/pull/5248)
-submitted **$O(nlogn)$ time answer of BFS + sorting**, avoiding recursions while complementing original solution's $O(nlogn)$ DFS + sorting.
+submitted **$O(nlogn)$ time answer of BFS + sorting, avoiding recursions** while complementing original solution's $O(nlogn)$ DFS + sorting.
+
+
+## ‍😁️ Still Prefer SkyHorse
+Because there aren't any wording formats to follow. **Styles in SkyHorse are more entertaining~~**
