@@ -8,3 +8,5 @@ sidebar:
 
 
 Walking around as far away as I can to grasp every corner that draws my curiosity.
+
+All these posts & photos aren't done yet. Gonna do more when I have time this summer 😉

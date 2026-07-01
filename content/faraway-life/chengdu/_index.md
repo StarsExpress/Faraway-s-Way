@@ -1,6 +1,6 @@
 ---
 title: "Chengdu"
-weight: 5
+weight: 3
 toc: false
 sidebar:
   hide: true

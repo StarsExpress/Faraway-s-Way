@@ -50,7 +50,7 @@
           <a href="{{ $page.RelPermalink }}" class="flw-card" data-tags="{{ $tagsCSV }}">
             <div class="flw-card__img"
               {{ if $cover }}
-                style="background-image:url('{{ $cover }}'); background-size:cover; background-position:center;"
+                style="background-image:url('{{ (strings.TrimPrefix "/" $cover) | relURL }}'); background-size:cover; background-position:center;"
               {{ else }}
                 style="background:{{ $grad }};"
               {{ end }}>

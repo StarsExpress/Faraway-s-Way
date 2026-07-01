@@ -1,6 +1,6 @@
 ---
 title: "Shanghai"
-weight: 5
+weight: 1
 toc: false
 sidebar:
   hide: true

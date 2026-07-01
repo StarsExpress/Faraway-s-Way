@@ -1,6 +1,6 @@
 ---
 title: "Xi'An"
-weight: 5
+weight: 2
 toc: false
 sidebar:
   hide: true

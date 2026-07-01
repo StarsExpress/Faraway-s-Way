@@ -1,6 +1,6 @@
 ---
 title: "Fujian"
-weight: 5
+weight: 4
 toc: false
 sidebar:
   hide: true
