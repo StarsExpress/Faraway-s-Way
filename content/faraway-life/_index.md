@@ -1,5 +1,5 @@
 ---
-title: "️🌊Faraway Life"
+title: "️🗺️Explore & Enjoy"
 weight: 5
 toc: false
 sidebar:
@@ -9,4 +9,4 @@ sidebar:
 
 Walking around as far away as I can to grasp every corner that draws my curiosity.
 
-All these posts & photos aren't done yet. Gonna do more when I have time this summer 😉
+All posts & photos aren't done yet. Gonna do more when I have time this summer 😉

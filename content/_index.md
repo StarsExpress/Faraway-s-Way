@@ -41,18 +41,19 @@ sidebar:
       supplies & demands, especially for conversational AI applications. Welcome to chat 🤓
     </p>
   <div class="hero-links" style="display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; font-size: 1rem;">
-      <a href="https://www.linkedin.com/in/Yuan-Jack-Yao" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 1.2rem;">
-        <span style="display: inline-flex; transform: scale(1.5);">{{< icon "linkedin" >}}</span> LinkedIn
+      <a href="https://github.com/StarsExpress" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 1.2rem;">
+        <span style="display: inline-flex; transform: scale(1.5);">{{< icon "github" >}}</span> GitHub
       </a>
       <a href="mailto:yyao411@gatech.edu" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 1.2rem;">
         <span style="display: inline-flex; transform: scale(1.5);">{{< icon "mail" >}}</span> Email
       </a>
-      <a href="https://github.com/StarsExpress" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 1.2rem;">
-        <span style="display: inline-flex; transform: scale(1.5);">{{< icon "github" >}}</span> GitHub
+      <a href="https://www.linkedin.com/in/Yuan-Jack-Yao" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 1.2rem;">
+        <span style="display: inline-flex; transform: scale(1.5);">{{< icon "linkedin" >}}</span> LinkedIn
       </a>
     </div>
   </div>
 </div>
+
 
 ## Some Hobbies Deployed
 

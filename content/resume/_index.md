@@ -43,7 +43,7 @@ sidebar:
   </a>
   <a href="tel:+14045286519"
      style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1.1rem; border: 1.5px solid currentColor; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
-    📱 +1 (404) 528-6519
+    📱 Phone
   </a>
 </div>
 
