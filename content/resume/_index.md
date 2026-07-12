@@ -52,7 +52,10 @@ sidebar:
 
 [//]: # (GA Tech.)
 <div class="exp-row" style="margin-bottom: 2px;">
-  <span style="font-size: 18px; font-weight: 700;">Georgia Institute of Technology</span>
+  <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+    <img src="gt_logo.png" alt="Georgia Institute of Technology" style="height: 30px; width: auto; vertical-align: middle;">
+    Georgia Institute of Technology
+  </span>
   <span style="font-size: 16px; font-weight: 700;">Aug 2026～Dec 2026</span>
 </div>
 <div class="exp-row" style="margin-bottom: 8px;">
@@ -64,7 +67,10 @@ sidebar:
 
 [//]: # (Walmart.)
 <div class="exp-row" style="margin-bottom: 2px;">
-  <span style="font-size: 18px; font-weight: 700;">Walmart</span>
+  <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+    <img src="walmart_logo.png" alt="Walmart" style="height: 30px; width: auto; vertical-align: middle;">
+    Walmart
+  </span>
   <span style="font-size: 16px; font-weight: 700;">Jun 2026～Aug 2026</span>
 </div>
 <div class="exp-row" style="margin-bottom: 8px;">
@@ -81,7 +87,10 @@ sidebar:
 
 [//]: # (SUEZ.)
 <div class="exp-row" style="margin-bottom: 2px;">
-  <span style="font-size: 18px; font-weight: 700;">SUEZ</span>
+  <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+    <img src="suez_logo.png" alt="SUEZ" style="height: 30px; width: 80px; vertical-align: middle;">
+    SUEZ
+  </span>
   <span style="font-size: 16px; font-weight: 700;">May 2022～Sep 2024</span>
 </div>
 <div class="exp-row" style="margin-bottom: 8px;">
@@ -93,7 +102,7 @@ sidebar:
   SCADA alarms at <strong>82% production accuracy</strong>.</li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Speeded up classifier application to <strong>1 second runtime per HTTP request</strong>
+  <li>Accelerated classifier application to <strong>1 second runtime per HTTP request</strong>
   in <strong>Linux Services</strong>.</li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
@@ -117,7 +126,10 @@ sidebar:
 
 [//]: # (Pramerica Life Insurance.)
 <div class="exp-row" style="margin-bottom: 2px;">
-  <span style="font-size: 18px; font-weight: 700;">Pramerica Life Insurance</span>
+  <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+    <img src="pramerica_logo.png" alt="Pramerica Life Insurance" style="height: 30px; width: auto; vertical-align: middle;">
+    Pramerica Life Insurance
+  </span>
   <span style="font-size: 16px; font-weight: 700;">Sep 2020～Apr 2022</span>
 </div>
 <div class="exp-row" style="margin-bottom: 8px;">
@@ -184,7 +196,10 @@ sidebar:
 
 [//]: # (GA Tech.)
 <div class="exp-row" style="margin-bottom: 2px;">
-  <span style="font-size: 18px; font-weight: 700;">Georgia Institute of Technology</span>
+  <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+    <img src="gt_logo.png" alt="Georgia Institute of Technology" style="height: 30px; width: auto; vertical-align: middle;">
+    Georgia Institute of Technology
+  </span>
   <span style="font-size: 16px; font-weight: 700;">Aug 2025～Dec 2026</span>
 </div>
 <div class="exp-row" style="margin-bottom: 8px;">
@@ -203,7 +218,10 @@ sidebar:
 
 [//]: # (UCSD.)
 <div class="exp-row" style="margin-bottom: 2px;">
-  <span style="font-size: 18px; font-weight: 700;">University of California, San Diego</span>
+  <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+    <img src="ucsd_logo.png" alt="University of California, San Diego" style="height: 30px; width: auto; vertical-align: middle;">
+    University of California, San Diego
+  </span>
   <span style="font-size: 16px; font-weight: 700;">Sep 2019～Sep 2020</span>
 </div>
 <div class="exp-row" style="margin-bottom: 8px;">
@@ -215,7 +233,10 @@ sidebar:
 
 [//]: # (NTU.)
 <div class="exp-row" style="margin-bottom: 2px;">
-  <span style="font-size: 18px; font-weight: 700;">National Taiwan University</span>
+  <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+    <img src="ntu_logo.png" alt="National Taiwan University" style="height: 30px; width: auto; vertical-align: middle;">
+    National Taiwan University
+  </span>
   <span style="font-size: 16px; font-weight: 700;">Sep 2014～Jun 2018</span>
 </div>
 <div class="exp-row" style="margin-bottom: 8px;">
