@@ -21,12 +21,12 @@ sidebar:
     <span>↗</span>
 </a>
 
-| **Backend**                                                        | **Frontend** | **Game Logic**            | **Deployment**     |
-|--------------------------------------------------------------------|----------------------------|---------------------------|----------------|
+| **Backend**                                         | **Frontend** | **Game Logic**            | **Deployment**     |
+|-----------------------------------------------------------------|----------------------------|---------------------------|----------------|
 | <img src="https://skillicons.dev/icons?i=python,fastapi,github" /> | <img src="https://skillicons.dev/icons?i=js,html,css" /> | **🇲🇴Macau Style Rules** | **Railway🛤️** |
 
 
-## 🎮 Game Demos
+## 🎮 Game Vibes
 
 #### 🎉 Winner Winner Chicken Dinner 🦃
 

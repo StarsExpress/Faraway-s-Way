@@ -7,4 +7,4 @@ Is the storage of all my portfolio's materials, and website deployment place.
 Is which my portfolio is built on~~
 
 I really recommend [Hextra](https://github.com/imfing/hextra) for stable LaTeX rendering
-and naturally flexible background colors.
+and flexible background colors.
