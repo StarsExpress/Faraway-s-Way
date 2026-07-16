@@ -27,7 +27,7 @@ sidebar:
 <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem;">
   <a href="Jack_Yao_Resume.pdf" target="_blank" rel="noopener noreferrer"
      style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1.1rem; background: #2563eb; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.95rem;">
-    📋Condensed Résumé
+    📋Résumé PDF
   </a>
   <a href="https://github.com/StarsExpress" target="_blank" rel="noopener noreferrer"
      style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1.1rem; border: 1.5px solid currentColor; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
@@ -53,7 +53,7 @@ sidebar:
 [//]: # (GA Tech.)
 <div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
-    <img src="gt_logo.png" alt="Georgia Institute of Technology" style="height: 30px; width: auto; vertical-align: middle;">
+    <img src="gt_logo.png" alt="Georgia Institute of Technology" style="height: 30px; width: 30px; vertical-align: middle;">
     Georgia Institute of Technology
   </span>
   <span style="font-size: 16px; font-weight: 700;">Aug 2026～Dec 2026</span>
@@ -68,7 +68,7 @@ sidebar:
 [//]: # (Walmart.)
 <div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
-    <img src="walmart_logo.png" alt="Walmart" style="height: 30px; width: auto; vertical-align: middle;">
+    <img src="walmart_logo.png" alt="Walmart" style="height: 30px; width: 30px; vertical-align: middle;">
     Walmart
   </span>
   <span style="font-size: 16px; font-weight: 700;">Jun 2026～Aug 2026</span>
@@ -78,9 +78,11 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Bentonville, Arkansas</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Deployed an <strong>automated hourly snapshot pipeline</strong> with <strong>Docker</strong> and
-  <strong>Kubernetes</strong>, integrating <strong>asynchronous processing</strong> that reduced execution time by
-  <strong>50%</strong>, and fully covering <strong>1,000+</strong> cameras' snapshots into <strong>Azure</strong>.</li>
+  <li>Deployed an <strong>hourly snapshot pipeline</strong> with <strong>Docker</strong> and
+  <strong>Kubernetes</strong>, integrating <strong>asynchronous processing</strong> to reduce
+  <strong>50% execution time</strong> for capturing snapshots from <strong>1,245</strong>
+  cameras into <strong>Azure Blob Storage</strong>, with a 7-day <strong>TTL</strong>
+  retention policy reducing <strong>75% Azure Blob storage footprint.</strong></li>
 </ul>
 
 <br>
@@ -99,27 +101,15 @@ sidebar:
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
   <li>Streamlined an <strong>NLP-based Keras</strong> classifier for <strong>imbalanced</strong>
-  SCADA alarms at <strong>82% production accuracy</strong>.</li>
+  SCADA alarms, reaching <strong>82% production accuracy.</strong></li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Accelerated classifier application to <strong>1 second runtime per HTTP request</strong>
-  in <strong>Linux Services</strong>.</li>
+  <li>Designed a <strong>DBSCAN-based anomaly detector</strong> for air compressors <strong>predictive maintenance</strong>,
+  achieving <strong>70% production F1 score</strong> and forecasting failures
+  <strong>two weeks in advance despite having only a single feature.</strong></li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Developed a <strong>DBSCAN</strong> anomaly detector to send
-  <strong>predictive maintenance alarms</strong> for air compressors.</li>
-</ul>
-<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Anomaly detector reached <strong>70% production F1 score</strong>
-  with timeliness of <strong>2 weeks earlier than actual events</strong>.</li>
-</ul>
-<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Applied <strong>Joblib</strong> on Linux and
-  <strong>saved 20% processing time</strong> of 12 air compressors' clustering.</li>
-</ul>
-<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Designed an <strong>automated MySQL ETL pipeline</strong>
-  with conditional deletion on minutely time series.</li>
+  <li>Accelerated clustering on 12 air compressors with Joblib, <strong>reducing runtime by 20% in Linux CronJob.</strong></li>
 </ul>
 
 <br>
@@ -127,7 +117,7 @@ sidebar:
 [//]: # (Pramerica Life Insurance.)
 <div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
-    <img src="pramerica_logo.png" alt="Pramerica Life Insurance" style="height: 30px; width: auto; vertical-align: middle;">
+    <img src="pramerica_logo.png" alt="Pramerica Life Insurance" style="height: 30px; width: 30px; vertical-align: middle;">
     Pramerica Life Insurance
   </span>
   <span style="font-size: 16px; font-weight: 700;">Sep 2020～Apr 2022</span>
@@ -197,7 +187,7 @@ sidebar:
 [//]: # (GA Tech.)
 <div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
-    <img src="gt_logo.png" alt="Georgia Institute of Technology" style="height: 30px; width: auto; vertical-align: middle;">
+    <img src="gt_logo.png" alt="Georgia Institute of Technology" style="height: 30px; width: 30px; vertical-align: middle;">
     Georgia Institute of Technology
   </span>
   <span style="font-size: 16px; font-weight: 700;">Aug 2025～Dec 2026</span>
@@ -219,7 +209,7 @@ sidebar:
 [//]: # (UCSD.)
 <div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
-    <img src="ucsd_logo.png" alt="University of California, San Diego" style="height: 30px; width: auto; vertical-align: middle;">
+    <img src="ucsd_logo.png" alt="University of California, San Diego" style="height: 30px; width: 30px; vertical-align: middle;">
     University of California, San Diego
   </span>
   <span style="font-size: 16px; font-weight: 700;">Sep 2019～Sep 2020</span>
@@ -234,7 +224,7 @@ sidebar:
 [//]: # (NTU.)
 <div class="exp-row" style="margin-bottom: 2px;">
   <span style="font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
-    <img src="ntu_logo.png" alt="National Taiwan University" style="height: 30px; width: auto; vertical-align: middle;">
+    <img src="ntu_logo.png" alt="National Taiwan University" style="height: 30px; width: 30px; vertical-align: middle;">
     National Taiwan University
   </span>
   <span style="font-size: 16px; font-weight: 700;">Sep 2014～Jun 2018</span>
