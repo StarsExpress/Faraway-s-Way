@@ -28,7 +28,7 @@ sidebar:
 
 ## 📈 Platform Characteristics
 
-#### 📇 Player Cards Behind Scatters ☝
+#### 📇 Player Cards Drive Points ☝
 
 <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
   <img src="platform_home.png" alt="Platform Home"
@@ -47,7 +47,79 @@ sidebar:
 
 LinesShines reveals how shiny an excellent OL/DL is.
 
-__Hereby any plotted franchise logo is on click to show you player's card for detailed stats.__
+__Hereby any plotted franchise logo is on click to show you player's card for detailed stats,
+as this is what data points are all about.__
+
+All these detailed performance stats have two traits:
+- **Rank: out of all filtered players in the same position.**
+- **Percentile: derived from rank directly.**
+
+How about we go down to meet with more traits? 😎
+
+#### 🚶🏻‍♂️Movable Player Card 👌
+
+<div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
+  <img src="draggable_card_i.png" alt="Draggable Card I"
+       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+  <img src="draggable_card_ii.png" alt="Draggable Card II"
+       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+</div>
+
+Whenever the popup player card isn't placed at your desired spot, no worries: __just drag it wherever you want.__
+
+Player card is here to **help you without ever obstructing** your sight 💪
+
+#### 😺Rank & Percentile Aren't Statues 🤸🏻
+
+<div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
+  <img src="rank_pre_filter.png" alt="Rank Pre Filter"
+       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+  <img src="rank_post_filter.png" alt="Rank Post Filter"
+       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+</div>
+
+Anytime you change the way you filter players,
+__rank & percentile automatically recalculate to follow you closely and immediately.__
+
+#### 🎯Focus On Specific Teams 🏹
+
+<div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
+  <img src="teams_selection.png" alt="Teams Selection"
+       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+</div>
+
+Very often you may only feel interested in how your rooted team or rival is doing.
+
+Awesome～～～here is a drop-down menu to let you pick out any team you want.
+
+Those not selected by you will just politely turn dim,
+__so all the lights go purely onto team(s) you've grabbed 💡__
+
+__Domain knowledge matters —__ in NFL, we first split conferences: AFC VS. NFC.
+
+Then, we divide each conference into 4 divisions: East, North, South, West.
+
+Team logos are placed inside drop-down menu with such logic 🙌
 
 #### ⇓ Save As You Wish 🤓
 

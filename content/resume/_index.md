@@ -25,17 +25,17 @@ sidebar:
 
 ## Contact
 <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem;">
-  <a href="Jack_Yao_Resume.pdf" target="_blank" rel="noopener noreferrer"
+   <a href="Jack_Yao_Resume.pdf" target="_blank" rel="noopener noreferrer"
      style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1.1rem; background: #2563eb; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.95rem;">
-    📋Résumé PDF
+     📋Résumé PDF
   </a>
   <a href="https://github.com/StarsExpress" target="_blank" rel="noopener noreferrer"
      style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1.1rem; border: 1.5px solid currentColor; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
-    {{< icon "github" >}} GitHub ↗
+    {{< icon "github" >}} GitHub
   </a>
   <a href="https://www.linkedin.com/in/Yuan-Jack-Yao" target="_blank" rel="noopener noreferrer"
      style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1.1rem; border: 1.5px solid currentColor; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
-    {{< icon "linkedin" >}} LinkedIn ↗
+    {{< icon "linkedin" >}} LinkedIn
   </a>
   <a href="mailto:yyao411@gatech.edu"
      style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1.1rem; border: 1.5px solid currentColor; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
@@ -78,11 +78,16 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Bentonville, Arkansas</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Deployed an <strong>hourly snapshot pipeline</strong> with <strong>Docker</strong> and
+  <li>Deployed an <strong>hourly CronJob pipeline</strong> with <strong>Docker</strong> and
   <strong>Kubernetes</strong>, integrating <strong>asynchronous processing</strong> to reduce
   <strong>50% execution time</strong> for capturing snapshots from <strong>1,245</strong>
   cameras into <strong>Azure Blob Storage</strong>, with a 7-day <strong>TTL</strong>
   retention policy reducing <strong>75% Azure Blob storage footprint.</strong></li>
+</ul>
+<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
+  <li>Extended the <strong>same CronJob pipeline</strong> with a container to <strong>synchronize</strong>
+  Sam’s Club zone location data from CSV into <strong>PostgreSQL</strong>, enabling
+  <strong>snapshot content to be mapped onto in-store zone layouts.</strong></li>
 </ul>
 
 <br>
