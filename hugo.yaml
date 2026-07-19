@@ -23,33 +23,36 @@ markup:
 
 menu:
   main:
+    - name: "✨LinesShines"
+      pageRef: /linesshines
+      weight: 1
     - name: "🙉MonkeyJOB"
       pageRef: /monkeyjob
-      weight: 1
+      weight: 2
     - name: "🪂SkyHorse"
       pageRef: /skyhorse
-      weight: 2
+      weight: 3
     - name: "📕Notes"
       pageRef: /notes
-      weight: 3
+      weight: 4
     - name: "💼Résumé"
       pageRef: /resume
-      weight: 4
+      weight: 5
     - name: "🌊Faraway Life"
       pageRef: /faraway-life
-      weight: 5
-    - name: Search
       weight: 6
+    - name: Search
+      weight: 7
       params:
         type: search
         math: true
     - name: GitHub
-      weight: 7
+      weight: 8
       url: "https://github.com/StarsExpress"
       params:
         icon: github
     - name: Theme
-      weight: 8
+      weight: 9
       params:
         type: theme-toggle
 

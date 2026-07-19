@@ -15,3 +15,9 @@ a[href^="/faraway-life"]::before {
   background-color: currentColor;
   opacity: 0.2;
 }
+
+/* Navbar: shrink the search box (theme default is 16rem). */
+
+.hextra-search-wrapper {
+  max-width: 9rem;
+}

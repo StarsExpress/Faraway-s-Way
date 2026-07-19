@@ -132,6 +132,17 @@ sidebar:
 
 <div class="hobby-cards">
   <div class="hobby-card">
+    <a class="hobby-card__image-link" href="https://lines-shines.up.railway.app" target="_blank" rel="noopener noreferrer">
+      <img src="images/lines_shines_logo.png" alt="🏈LinesShines · 鋒光" style="background: #111827;">
+    </a>
+    <a class="hobby-card__arrow" href="https://lines-shines.up.railway.app" target="_blank" rel="noopener noreferrer" aria-label="Open LinesShines live site">↗</a>
+    <a class="hobby-card__body-link" href="linesshines/">
+      <div class="hobby-card__title">🏈LinesShines · 鋒光</div>
+      <div class="hobby-card__subtitle">★Customized interactive NFL O & D Lines exploration platform.</div>
+    </a>
+  </div>
+
+  <div class="hobby-card">
     <a class="hobby-card__image-link" href="https://www.jack-s-onlineblackjack.com/" target="_blank" rel="noopener noreferrer">
       <img src="images/job_logo.png" alt="🎰MonkeyJOB" style="background: #111827;">
     </a>
@@ -150,17 +161,6 @@ sidebar:
     <a class="hobby-card__body-link" href="skyhorse/">
       <div class="hobby-card__title">🏇天码行空 · SkyHorse</div>
       <div class="hobby-card__subtitle">📙Bilingual &amp; double-indexed tech blog for data structures &amp; algorithms.</div>
-    </a>
-  </div>
-
-  <div class="hobby-card">
-    <a class="hobby-card__image-link" href="https://lines-shines.up.railway.app" target="_blank" rel="noopener noreferrer">
-      <img src="images/lines_shines_logo.png" alt="★LinesShines · 鋒光" style="background: #111827;">
-    </a>
-    <a class="hobby-card__arrow" href="https://lines-shines.up.railway.app" target="_blank" rel="noopener noreferrer" aria-label="Open LinesShines live site">↗</a>
-    <a class="hobby-card__body-link" href="linesshines/">
-      <div class="hobby-card__title">★LinesShines · 鋒光</div>
-      <div class="hobby-card__subtitle">🏈Customized interactive visualization platform for NFL O & D Lines.</div>
     </a>
   </div>
 </div>
