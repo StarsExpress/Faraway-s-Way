@@ -45,16 +45,15 @@ sidebar:
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
 </div>
 
-LinesShines reveals how shiny an excellent OL/DL is.
+LinesShines reveals how shiny an elite OL/DL truly is.
 
-__Hereby any plotted franchise logo is on click to show you player's card for detailed stats,
-as this is what data points are all about.__
+__Every team logo on the chart is a real player — click any one to open their full scouting card.__
 
-All these detailed performance stats have two traits:
-- **Rank: out of all filtered players in the same position.**
-- **Percentile: derived from rank directly.**
+Each card carries two key traits:
+- **Rank — where this player stands among all filtered peers at same position.**
+- **Percentile — how far above/below this player is from majority.**
 
-How about we go down to meet with more traits? 😎
+Ready to see what else these cards can do? 👇😎
 
 #### 🚶🏻‍♂️Movable Player Card 👌
 
@@ -73,9 +72,9 @@ How about we go down to meet with more traits? 😎
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
 </div>
 
-Whenever the popup player card isn't placed at your desired spot, no worries: __just drag it wherever you want.__
+Whenever the popup player card isn't placed at your desired spot, no worries: __just drag to wherever you like.__
 
-Player card is here to **help you without ever obstructing** your sight 💪
+Player cards **help you without ever obstructing** your sight, as this is their job 💪
 
 #### 😺Rank & Percentile Aren't Statues 🤸🏻
 
@@ -94,8 +93,10 @@ Player card is here to **help you without ever obstructing** your sight 💪
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
 </div>
 
-Anytime you change the way you filter players,
-__rank & percentile automatically recalculate to follow you closely and immediately.__
+Anytime you change the way you filter players, rank & percentile
+automatically recalculate to follow you closely and immediately.
+
+__Rank & percentile reflect the pool you're now looking at. Not an unchanged global leaderboard.__
 
 #### 🎯Focus On Specific Teams 🏹
 
@@ -108,18 +109,18 @@ __rank & percentile automatically recalculate to follow you closely and immediat
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
 </div>
 
-Very often you may only feel interested in how your rooted team or rival is doing.
+Very often you only care about your team. Or their biggest rival.
 
-Awesome～～～here is a drop-down menu to let you pick out any team you want.
+Awesome～～～here is a drop-down menu to let you pick any combination of teams you want.
 
-Those not selected by you will just politely turn dim,
+Those not selected by you will just politely turn dim but still visible,
 __so all the lights go purely onto team(s) you've grabbed 💡__
 
-__Domain knowledge matters —__ in NFL, we first split conferences: AFC VS. NFC.
+__Domain knowledge matters —__ NFL splits into two conferences: AFC & NFC.
 
-Then, we divide each conference into 4 divisions: East, North, South, West.
+Each conference has 4 divisions: East, North, South, West.
 
-Team logos are placed inside drop-down menu with such logic 🙌
+Team dropdown mirrors such a structure exactly. **Collect an entire division in seconds 🙌**
 
 #### ⇓ Save As You Wish 🤓
 
@@ -138,11 +139,11 @@ Team logos are placed inside drop-down menu with such logic 🙌
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
 </div>
 
-Every filtered plot deserves to be saved for future reference.
+Found a plot you want to keep — or even share on Twitter?
 
 Hitting that save plot button downloads __a high resolution PNG__ for you.
 
-__Yes, this includes all very clear annotation texts.__
+__Each PNG is a whole story with axis labels, medians, team logos, player names, and stat definitions.__
 
 
 ## 📈 HIT: Heroes In Trenches
