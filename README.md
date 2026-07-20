@@ -1,5 +1,7 @@
 # 🏔️Faraway's Way
 
+[![main Pages](https://github.com/StarsExpress/Faraway-s-Way/actions/workflows/pages.yaml/badge.svg?branch=main)](https://github.com/StarsExpress/Faraway-s-Way/actions)
+
 ### This Repo 🫙
 Is the storage of all my portfolio's materials, and website deployment place.
 

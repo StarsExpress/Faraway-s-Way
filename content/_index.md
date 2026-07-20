@@ -132,10 +132,10 @@ sidebar:
 
 <div class="hobby-cards">
   <div class="hobby-card">
-    <a class="hobby-card__image-link" href="https://lines-shines.up.railway.app" target="_blank" rel="noopener noreferrer">
+    <a class="hobby-card__image-link" href="https://www.lines-shines.com" target="_blank" rel="noopener noreferrer">
       <img src="images/lines_shines_logo.png" alt="🏈LinesShines · 鋒光" style="background: #111827;">
     </a>
-    <a class="hobby-card__arrow" href="https://lines-shines.up.railway.app" target="_blank" rel="noopener noreferrer" aria-label="Open LinesShines live site">↗</a>
+    <a class="hobby-card__arrow" href="https://www.lines-shines.com" target="_blank" rel="noopener noreferrer" aria-label="Open LinesShines live site">↗</a>
     <a class="hobby-card__body-link" href="linesshines/">
       <div class="hobby-card__title">🏈LinesShines · 鋒光</div>
       <div class="hobby-card__subtitle">★Customized interactive NFL O & D Lines exploration platform.</div>

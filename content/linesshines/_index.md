@@ -7,7 +7,7 @@ sidebar:
 ---
 
 
-<a href="https://lines-shines.up.railway.app" target="_blank" rel="noopener noreferrer"
+<a href="https://www.lines-shines.com" target="_blank" rel="noopener noreferrer"
    style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 1.75rem; box-sizing: border-box;
    background: linear-gradient(135deg, #5c2f0a, #a0522d);
    color: #fff; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 17px;
