@@ -21,7 +21,6 @@ sidebar:
     <span>↗</span>
 </a>
 
-[![Latest Release](https://img.shields.io/github/v/release/StarsExpress/SkyHorse)](https://github.com/StarsExpress/SkyHorse/releases)
 
 <div class="hero-intro" style="display: flex; flex-direction: row; align-items: center; gap: 1rem; width: 100%; margin: 1rem 0 0;">
   <img src="submissions_history.png" alt="Submissions History"

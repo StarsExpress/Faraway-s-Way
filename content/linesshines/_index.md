@@ -21,7 +21,6 @@ sidebar:
   <span>↗</span>
 </a>
 
-[![Latest Release](https://img.shields.io/github/v/release/StarsExpress/LinesShines)](https://github.com/StarsExpress/LinesShines/releases)
 
 | **Backend**                                                                          | **Frontend**     | **Deployment**     |
 |--------------------------------------------------------------------------------------|----------------------------|-----------------|

@@ -21,7 +21,6 @@ sidebar:
     <span>↗</span>
 </a>
 
-[![Latest Release](https://img.shields.io/github/v/release/StarsExpress/MonkeyJOB)](https://github.com/StarsExpress/MonkeyJOB/releases)
 
 | **Backend**                                         | **Frontend** | **Game Logic**            | **Deployment**     |
 |-----------------------------------------------------------------|----------------------------|---------------------------|----------------|
