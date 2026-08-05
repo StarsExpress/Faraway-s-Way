@@ -149,7 +149,7 @@ sidebar:
     <a class="hobby-card__arrow" href="https://www.jack-s-onlineblackjack.com/" target="_blank" rel="noopener noreferrer" aria-label="Open MonkeyJOB live site">↗</a>
     <a class="hobby-card__body-link" href="monkeyjob/">
       <div class="hobby-card__title">🎰MonkeyJOB</div>
-      <div class="hobby-card__subtitle">🎰JOB: Jack's Online Blackjack — 🎮Casino-style UI web Blackjack game.</div>
+      <div class="hobby-card__subtitle">🎰MonkeyJOB: Jack's Online Blackjack — 🎮Casino-style UI web Blackjack game.</div>
     </a>
   </div>
 

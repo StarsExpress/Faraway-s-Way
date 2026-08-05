@@ -1,5 +1,5 @@
 ---
-title: "🎰JOB: Jack's Online Blackjack"
+title: "🎰MonkeyJOB: Jack's Online Blackjack"
 weight: 1
 toc: true
 sidebar:
@@ -20,6 +20,8 @@ sidebar:
     <span>🫰</span>
     <span>↗</span>
 </a>
+
+[![Latest Release](https://img.shields.io/github/v/release/StarsExpress/MonkeyJOB)](https://github.com/StarsExpress/MonkeyJOB/releases)
 
 | **Backend**                                         | **Frontend** | **Game Logic**            | **Deployment**     |
 |-----------------------------------------------------------------|----------------------------|---------------------------|----------------|

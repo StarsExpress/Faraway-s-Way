@@ -78,16 +78,32 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Bentonville, Arkansas</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Deployed an <strong>hourly CronJob pipeline</strong> with <strong>Docker</strong> and
-  <strong>Kubernetes</strong>, integrating <strong>asynchronous processing</strong> to reduce
-  <strong>50% execution time</strong> for capturing snapshots from <strong>1,245</strong>
-  cameras into <strong>Azure Blob Storage</strong>, with a 7-day <strong>TTL</strong>
-  retention policy reducing <strong>75% Azure Blob storage footprint.</strong></li>
+  <li>Integrated <strong>LLM & RAG with filtered vector search</strong>
+  into dashboard for answering camera status queries at camera/area/site levels,
+  with <strong>cosine similarity & LLMs-as-a-Judge as quality gates against hallucinations.</strong></li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Extended the <strong>same CronJob pipeline</strong> with a container to <strong>synchronize</strong>
-  Sam’s Club zone location data from CSV into <strong>PostgreSQL</strong>, enabling
-  <strong>snapshot content to be mapped onto in-store zone layouts.</strong></li>
+  <li>Designed an <strong>embedding signature to verify Milvus vector database</strong>
+  ingestion & retrieval sides call the identical embedding model — despite being forced onto
+  different API clients — <strong>eliminating silent retrieval degradation.</strong>
+</li>
+</ul>
+<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
+  <li>Deployed a <strong>monthly Gemini Vision CronJob</strong> across
+  <strong>1,245 in-store cameras spanning 9 sites</strong> to classify
+  snapshot content and align each camera to its current area, using SVG floor
+  layouts as the primary match reference with CSV data as fallback.</li>
+</ul>
+<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
+  <li>Achieved full-fleet <strong>inference of 1,245 cameras in 13 minutes
+  through concurrency</strong>, while <strong>capping glibc malloc</strong> arenas and
+  <strong>pre-downsampling images</strong> to <strong>eliminate out-of-memory</strong> failures.</li>
+</ul>
+<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
+  <li>Deployed an <strong>hourly CronJob pipeline</strong> with <strong>Docker</strong> and
+  <strong>Kubernetes</strong>, integrating <strong>asynchronous processing</strong> that reduced
+  <strong>50%</strong> execution time for capturing <strong>1,245 camera snapshots</strong> into
+  <strong>Azure</strong>, using 7-day TTL to save <strong>75%</strong> storage cost.</li>
 </ul>
 
 <br>
@@ -145,7 +161,7 @@ sidebar:
 
 <div style="padding: 1rem 1.25rem; border: 1px solid rgba(128,128,128,0.25); border-radius: 8px;">
   <div style="font-weight: 600; margin-bottom: 0.5rem;">⛓️ LLMs & Agents</div>
-  Hugging Face, RAG, MCP<br>
+  RAG, Hugging Face<br>
   Supervised Fine-tuning<br>Distillation
 </div>
 
@@ -173,7 +189,7 @@ sidebar:
 <div style="padding: 1rem 1.25rem; border: 1px solid rgba(128,128,128,0.25); border-radius: 8px;">
   <div style="font-weight: 600; margin-bottom: 0.5rem;">🛢️ Databases & C++</div>
   <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://skillicons.dev/icons?i=mysql,postgresql,cpp" height="32" alt="Databases & C++" />
+    <img src="https://skillicons.dev/icons?i=cassandra,mysql,postgresql,cpp" height="32" alt="Databases & C++" />
   </div>
 </div>
 
