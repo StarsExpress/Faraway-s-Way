@@ -27,18 +27,18 @@ sidebar:
 | <img src="https://skillicons.dev/icons?i=python,postgresql,fastapi,github" /> | <img src="https://skillicons.dev/icons?i=js,html,css" /> |  **Railway🛤️** |
 
 
-## 📈 Platform Characteristics
+## 📈 Platform Performance
 
-#### 📇 Player Cards Drive Points ☝
+#### 📇 Cards Dive Deeper ☝
 
 <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
-  <img src="platform_home.png" alt="Platform Home"
+  <img src="player_card.png" alt="Player Card"
        style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
        onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
-  <img src="clickable_player_card.png" alt="Clickable Player Card"
+  <img src="linemates_card.png" alt="Linemates Card"
        style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
@@ -48,34 +48,105 @@ sidebar:
 
 LinesShines reveals how shiny an elite OL/DL truly is.
 
-__Every team logo on the chart is a real player — click any one to open their full scouting card.__
+__Every team logo on the chart is a real player — click any one to open their full player card.__
 
-Each card carries two key traits:
+Each player card carries these traits:
+
+1. Color Coder — let colors bring you first impressions on👇
 - **Rank — where this player stands among all filtered peers at same position.**
 - **Percentile — how far above/below this player is from majority.**
 
-Ready to see what else these cards can do? 👇😎
+2. Embedded Card — yes, it links to another card called __linemates card__ ↓
+- Player's linemates are his performance context. __Only when context reveals will stats be truly meaningful.__
 
-#### 🚶🏻‍♂️Movable Player Card 👌
+Inside linemates card, you can sort any metrics columns. All cards have a download button to export PNGs.
 
 <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
-  <img src="draggable_card_i.png" alt="Draggable Card I"
-       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+  <img src="derick_hall_personal.png" alt="Derick Hall Personal"
+       style="width: 38%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
        onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
-  <img src="draggable_card_ii.png" alt="Draggable Card II"
-       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+  <img src="derick_hall_linemates.png" alt="Derick Hall Linemates"
+       style="width: 54%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
               border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
        onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
        onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
 </div>
 
-Whenever the popup player card isn't placed at your desired spot, no worries: __just drag to wherever you like.__
+Treat them like browser pages — drag, expand, shrink, fold, unfold, close.
 
-Player cards **help you without ever obstructing** your sight, as this is their job 💪
+P.S. player card embedded with linemates card is inspired by GitHub commit and associated pull request.
+
+#### 🎯Union Spotlights — Teams & Players 🏹
+
+<div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
+  <img src="union_spotlights.png" alt="Union Spotlights"
+       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+</div>
+
+Very often you only want to know your team, or a specific player.
+
+Awesome～～～here is a __spotlight system__ focusing on a player if any of the following satisfies:
+
+- His team is selected: you care about his team so he must show up.
+- His name is selected: you care about him personally.
+
+Those not selected by you at all politely turn dim, but still visible and clickable to reveal cards.
+
+__So all highlights go purely onto team(s) and player(s) you've grabbed 💡__
+
+#### 🧠️Smart Name Search 🔍
+
+<div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
+  <img src="smart_search.png" alt="Smart Search"
+       style="width: 38%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+    <img src="suffix_match.png" alt="Suffix Match"
+       style="width: 54%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+</div>
+
+Don't worry about if you can't remember a player's exact name👌
+
+LinesShines has **fuzzy search**: typing "**ski**" brings you "Peter Skoron**ski**" as recommendation🤓
+
+Even suffix match is supported: "Trey Pipkins **II**I" shows up when "**II**" is typed👀
+
+#### 📍️Pin For Comparison ✵
+
+<div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
+  <img src="pinned_players.png" alt="Pinned Players"
+       style="width: 38%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+    <img src="player_comparison.png" alt="Player Comparison"
+       style="width: 54%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
+       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
+       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
+</div>
+
+LinesShines is a world for comparison: __merge several players' stats into one single card.__
+
+In this way, **you can easily view multiple players at once 💪**
+
+Entire pinned players area let you search, add, open card, and remove any players you want.
 
 #### 😺Rank & Percentile Aren't Statues 🤸🏻
 
@@ -94,57 +165,10 @@ Player cards **help you without ever obstructing** your sight, as this is their 
        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
 </div>
 
-Anytime you change the way you filter players, rank & percentile
-automatically recalculate to follow you closely and immediately.
+Anytime you adjust the snaps threshold bar, rank & percentile
+automatically recalculate to follow closely and immediately.
 
 __Rank & percentile reflect the pool you're now looking at. Not an unchanged global leaderboard.__
-
-#### 🎯Focus On Specific Teams 🏹
-
-<div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
-  <img src="teams_selection.png" alt="Teams Selection"
-       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
-              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
-       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
-       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(6,182,212,0.45)'"
-       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
-</div>
-
-Very often you only care about your team. Or their biggest rival.
-
-Awesome～～～here is a drop-down menu to let you pick any combination of teams you want.
-
-Those not selected by you will just politely turn dim but still visible,
-__so all the lights go purely onto team(s) you've grabbed 💡__
-
-__Domain knowledge matters —__ NFL splits into two conferences: AFC & NFC.
-
-Each conference has 4 divisions: East, North, South, West.
-
-Team dropdown mirrors such a structure exactly. **Collect an entire division in seconds 🙌**
-
-#### ⇓ Save As You Wish 🤓
-
-<div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
-  <img src="save_plot_button.png" alt="Save Plot Button"
-       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
-              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
-       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
-       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
-       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
-  <img src="saved_plot.png" alt="Saved Plot"
-       style="width: 46%; min-width: 240px; border-radius: 10px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
-              border: 3px solid rgba(160,82,45,0.6); box-shadow: 0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4);"
-       onclick="document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').style.display='flex';"
-       onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 6px 20px rgba(160,82,45,0.4)'"
-       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px rgba(0,0,0,0.3), 0 4px 14px rgba(0,0,0,0.4)'">
-</div>
-
-Found a plot you want to keep — or even share on Twitter?
-
-Hitting that save plot button downloads __a high resolution PNG__ for you.
-
-__Each PNG is a whole story with axis labels, medians, team logos, player names, and stat definitions.__
 
 
 ## 📈 HIT: Heroes In Trenches

@@ -24,7 +24,8 @@ sidebar:
 
 
 ## Contact
-<div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem;">
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; margin-bottom: 1rem;">
    <a href="Jack_Yao_Resume.pdf" target="_blank" rel="noopener noreferrer"
      style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1.1rem; background: #2563eb; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.95rem;">
      📋Résumé PDF
@@ -59,7 +60,7 @@ sidebar:
   <span style="font-size: 16px; font-weight: 700;">Aug 2026～Dec 2026</span>
 </div>
 <div class="exp-row" style="margin-bottom: 8px;">
-  <span style="font-size: 15px; font-style: italic;">Incoming Grad Teaching Assistant @ CS 6604 Conversational AI</span>
+  <span style="font-size: 15px; font-style: italic;">Graduate Teaching Assistant @ CS 6604 Conversational AI</span>
   <span style="font-size: 15px; font-style: italic;">Atlanta, Georgia</span>
 </div>
 
@@ -78,9 +79,9 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Bentonville, Arkansas</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Integrated <strong>LLM & RAG with filtered vector search</strong>
-  into dashboard for answering camera status queries at camera/area/site levels,
-  with <strong>cosine similarity & LLMs-as-a-Judge as quality gates against hallucinations.</strong></li>
+  <li>Integrated <strong>LLM & RAG</strong> with filtered vector search
+  into dashboard for answering camera metadata queries at camera/area/site levels,
+  with <strong>cosine similarity & LLMs-as-a-Judge</strong> as quality gates against hallucinations.</li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
   <li>Designed an <strong>embedding signature to verify Milvus vector database</strong>
@@ -89,19 +90,19 @@ sidebar:
 </li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Deployed a <strong>monthly Gemini Vision CronJob</strong> across
+  <li>Deployed <strong>monthly Gemini Vision CronJob</strong> across
   <strong>1,245 in-store cameras spanning 9 sites</strong> to classify
-  snapshot content and align each camera to its current area, using SVG floor
-  layouts as the primary match reference with CSV data as fallback.</li>
+  snapshot content and map camera to its actual in-store area, with SVG floor
+  layouts as primary reference and CSV as fallback.</li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
   <li>Achieved full-fleet <strong>inference of 1,245 cameras in 13 minutes
-  through concurrency</strong>, while <strong>capping glibc malloc</strong> arenas and
+  through concurrency</strong>, while <strong>capping glibc malloc arenas</strong> and
   <strong>pre-downsampling images</strong> to <strong>eliminate out-of-memory</strong> failures.</li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Deployed an <strong>hourly CronJob pipeline</strong> with <strong>Docker</strong> and
-  <strong>Kubernetes</strong>, integrating <strong>asynchronous processing</strong> that reduced
+  <li>Deployed <strong>hourly CronJob</strong> with <strong>Docker</strong> &
+  <strong>Kubernetes</strong>, integrating asynchronous processing that reduced
   <strong>50%</strong> execution time for capturing <strong>1,245 camera snapshots</strong> into
   <strong>Azure</strong>, using 7-day TTL to save <strong>75%</strong> storage cost.</li>
 </ul>
@@ -161,8 +162,8 @@ sidebar:
 
 <div style="padding: 1rem 1.25rem; border: 1px solid rgba(128,128,128,0.25); border-radius: 8px;">
   <div style="font-weight: 600; margin-bottom: 0.5rem;">⛓️ LLMs & Agents</div>
-  RAG, Hugging Face<br>
-  Supervised Fine-tuning<br>Distillation
+  AI Infra & Platform<br>RAG, Hugging Face<br>
+  Fine-tuning, Distillation
 </div>
 
 <div style="padding: 1rem 1.25rem; border: 1px solid rgba(128,128,128,0.25); border-radius: 8px;">
@@ -214,13 +215,12 @@ sidebar:
   <span style="font-size: 16px; font-weight: 700;">Aug 2025～Dec 2026</span>
 </div>
 <div class="exp-row" style="margin-bottom: 8px;">
-  <span style="font-size: 15px; font-style: italic;">MSc Analytics
+  <span style="font-size: 15px; font-style: italic;">M.Sc. Analytics
   @ <strong>School of Computational Science and Engineering</strong></span>
   <span style="font-size: 15px; font-style: italic;">Atlanta, Georgia</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>GPA 4.0/4.0<br>
-  <strong>Conversational AI, Natural Language, Machine Learning, ML in Computational Biology</strong>, Data & Visual Analytics,
+  <li>Courses: <strong>Conversational AI, Natural Language</strong>, Machine Learning, ML in Computational Biology, Data & Visual Analytics,
   Computing for Data Analysis, Nonparametric Data Analysis, Business Analytics Practicum, Data Analytics in Business
   </li>
 </ul>
