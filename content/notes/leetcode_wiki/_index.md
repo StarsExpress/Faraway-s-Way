@@ -1,6 +1,6 @@
 ---
-title: LeetCode Wiki Contributions
-weight: 1
+title: LeetCode Wiki
+weight: 2
 toc: true
 sidebar:
   hide: true
@@ -14,7 +14,7 @@ I suddenly remembered that, in November 2024, I actually already posted the same
 [the Discussions section of a public repo](https://github.com/doocs/leetcode/discussions/3761).
 
 
-## 🧘🏻‍♀️ Active Sharing Mindset
+## 🧘🏻‍♀️ Active Mindset
 [LeetCode Wiki](https://leetcode.doocs.org/en/) has activity and size that
 let me realize: "why not share some different style AC methods into public community?"
 
@@ -24,9 +24,7 @@ so everything started at elevating solution of No.2454 from Discussions into PR.
 In one month, I had
 [8 solution code & tutorials merged into LeetCode Wiki.](https://github.com/doocs/leetcode/pulls?q=is:pr+author:StarsExpress+is:merged)
 
-#### My Merged PRs Compared To LeetCode Wiki Original Solutions
-
-##### Efficiency Enhancement: 3
+#### Efficiency Enhancement: 3
 • [No.2454 Next Greater Element IV:](https://github.com/doocs/leetcode/pull/5202)
 achieved **$O(n)$ time by double stacks**, reducing from global sorting and ordered set of $O(nlogn)$ time.
 
@@ -36,7 +34,7 @@ delivered **the repo’s first tutorial for No.3430**, achieving both time and s
 • [No.1793 Maximum Score of a Good Subarray:](https://github.com/doocs/leetcode/pull/5215)
 optimized **$O(1)$ space with greedy two pointers**, reducing from stack’s $O(n)$ space.
 
-##### Different Style Same Efficiency: 4
+#### Different Style Same Efficiency: 4
 • [No.768 Max Chunks To Make Sorted II:](https://github.com/doocs/leetcode/pull/5214)
 wrote **$O(n)$ time method by prefix max & suffix min**, complementing original solution of $O(n)$ stack.
 
