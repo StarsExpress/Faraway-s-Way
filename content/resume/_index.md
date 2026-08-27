@@ -220,9 +220,15 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Atlanta, Georgia</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Courses: <strong>Conversational AI, Natural Language</strong>, Machine Learning, ML in Computational Biology, Data & Visual Analytics,
-  Computing for Data Analysis, Nonparametric Data Analysis, Business Analytics Practicum, Data Analytics in Business
-  </li>
+<br>
+
+  | Category          | Courses                                                                         |
+|-------------------|---------------------------------------------------------------------------------|
+| **Agents & LLMs** | Conversational AI • Natural Language • Knowledge-Based AI                       |
+| **DL / ML**       | Machine Learning • ML in Computational Biology                                  |
+| **Frontend**      | Data & Visual Analytics • Principles-UI Software                                |
+| **Statistics**    | Monte Carlo Methods • Nonparametric Data Analysis • Computing for Data Analysis |
+| **Business**      | Business Analytics Practicum • Data Analytics in Business                       |
 </ul>
 
 <br>

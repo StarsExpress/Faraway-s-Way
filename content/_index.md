@@ -138,7 +138,7 @@ sidebar:
     <a class="hobby-card__arrow" href="https://www.lines-shines.com" target="_blank" rel="noopener noreferrer" aria-label="Open LinesShines live site">↗</a>
     <a class="hobby-card__body-link" href="linesshines/">
       <div class="hobby-card__title">🏈LinesShines · 鋒光</div>
-      <div class="hobby-card__subtitle">★Customized interactive NFL O & D Lines exploration platform.</div>
+      <div class="hobby-card__subtitle">★Customized interactive NFL O & D Lines stats system.</div>
     </a>
   </div>
 
