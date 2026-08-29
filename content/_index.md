@@ -94,8 +94,8 @@ sidebar:
 
 <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 0.5rem 0 1.5rem;">
   <span style="padding: 0.3rem 0.9rem; border-radius: 9999px; border: 2.5px solid #E53935; color: #E53935; font-size: 0.92rem; font-weight: 500;">😃I'm Yuan Jack Yao</span>
-  <span style="padding: 0.3rem 0.9rem; border-radius: 9999px; border: 2.5px solid #0071CE; color: #0071CE; font-size: 0.92rem; font-weight: 500;">AI Acceleration DS III Intern @ Walmart🇺🇸</span>
-  <span style="padding: 0.3rem 0.9rem; border-radius: 9999px; border: 2.5px solid #007A33; color: #007A33; font-size: 0.92rem; font-weight: 500;">Former DS @ SUEZ · Shanghai🇨🇳</span>
+  <span style="padding: 0.3rem 0.9rem; border-radius: 9999px; border: 2.5px solid #0071CE; color: #0071CE; font-size: 0.92rem; font-weight: 500;">Prev. AI DS III Intern @ Walmart🇺🇸</span>
+  <span style="padding: 0.3rem 0.9rem; border-radius: 9999px; border: 2.5px solid #007A33; color: #007A33; font-size: 0.92rem; font-weight: 500;">Former Junior DS @ SUEZ · Shanghai🇨🇳</span>
   <span style="padding: 0.3rem 0.9rem; border-radius: 9999px; border: 2.5px solid #B8860B; color: #B8860B; font-size: 0.92rem; font-weight: 500;">School of CSE · Georgia Tech🐝</span>
 </div>
 

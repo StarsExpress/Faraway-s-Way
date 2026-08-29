@@ -118,7 +118,7 @@ sidebar:
   <span style="font-size: 16px; font-weight: 700;">May 2022～Sep 2024</span>
 </div>
 <div class="exp-row" style="margin-bottom: 8px;">
-  <span style="font-size: 15px; font-style: italic;">Data Scientist @ Smart & Environmental Solutions (SES) China</span>
+  <span style="font-size: 15px; font-style: italic;">Junior Data Scientist @ Smart & Environmental Solutions (SES) China</span>
   <span style="font-size: 15px; font-style: italic;">Shanghai, China</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
