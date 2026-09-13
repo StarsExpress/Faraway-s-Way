@@ -26,6 +26,7 @@ As a newcomer then, I started from dead code cleanups.
 
 [**And later — performance enhancement, potential bugs & risks fix.**](https://github.com/mpfaffenberger/code_puppy/pulls?q=is:pr+author:StarsExpress+is:merged)
 
+
 ## Drill Deeper Than Issues 🪏
 (1). Improved Agent—UI communications: [**reduce background CPU wake-ups by 88.5%**](https://github.com/mpfaffenberger/code_puppy/pull/859) via exponential backoff.
 
@@ -35,5 +36,7 @@ As a newcomer then, I started from dead code cleanups.
 
 (3). At times, [triage bot may mis-classify](https://github.com/mpfaffenberger/code_puppy/pull/711), **so I make corrections for it.**
 
+
 ## Keep Working 🍶
-Learn from great repo and people~~
+
+Seeing Code Puppy use Pydantic's AI core framework, [at times I contribute to Pydantic AI's open source repo.](https://github.com/pydantic/pydantic-ai/pulls?q=is:pr+author:StarsExpress+is:merged)

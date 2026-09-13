@@ -1,6 +1,6 @@
 ---
 title: LeetCode Wiki
-weight: 2
+weight: 3
 toc: true
 sidebar:
   hide: true

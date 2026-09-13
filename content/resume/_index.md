@@ -63,6 +63,9 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Graduate Teaching Assistant @ CS 6604 Conversational AI</span>
   <span style="font-size: 15px; font-style: italic;">Atlanta, Georgia</span>
 </div>
+<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
+  <li>Autograder deployment and assignments design.</li>
+</ul>
 
 <br>
 
