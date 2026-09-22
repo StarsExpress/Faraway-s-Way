@@ -1,9 +1,12 @@
 ---
-title: LSTM — Long Short-Term Memory
-weight: 2
+title: LSTM
+weight: 3
 math: true
 sidebar:
   hide: true
+cover: "/notes-cover/lstm.png"
+subtitle: "How memories are bonded"
+tags: ["Deep Learning", "NLP", "Math"]
 ---
 
 

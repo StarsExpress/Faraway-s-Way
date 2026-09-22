@@ -4,6 +4,9 @@ weight: 1
 toc: true
 sidebar:
   hide: true
+cover: "/notes-cover/code_puppy.png"
+subtitle: "Internship➡️Agentic DevOps"
+tags: ["Agentic AI", "OSS", "CI/CD"]
 ---
 
 

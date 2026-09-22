@@ -2,6 +2,7 @@
 title: "️🗺️Explore & Enjoy"
 weight: 5
 toc: false
+breadcrumbs: false
 sidebar:
   hide: true
 ---
