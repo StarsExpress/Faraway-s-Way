@@ -22,21 +22,26 @@ Staring at [Code Puppy open source repo](https://github.com/mpfaffenberger/code_
 
 "Let's help address some issues here as a way to show gratefulness."
 
-As a newcomer then, I started from dead code cleanups.
-
-[**And later — performance enhancement, potential bugs & risks fix.**](https://github.com/mpfaffenberger/code_puppy/pulls?q=is:pr+author:StarsExpress+is:merged)
+[**And within two months, things showed up quickly.**](https://github.com/mpfaffenberger/code_puppy/pulls?q=is:pr+author:StarsExpress+is:merged)
 
 
-## Drill Deeper Than Issues 🪏
+## I Drill Deeper Than Issues 🪏
 (1). Improved Agent—UI communications: [**reduce background CPU wake-ups by 88.5%**](https://github.com/mpfaffenberger/code_puppy/pull/859) via exponential backoff.
 
-(2). Inside big Agentic AI codebase, when aligning inconsistency across 20+ parser calls, [I'd like to:](https://github.com/mpfaffenberger/code_puppy/pull/808)
+(2). Corrected several attributes and behaviors from **Gemini Code Assist**:
+- [Restore silently-ignored model settings by users. Simplified thinking config handling, too.](https://github.com/mpfaffenberger/code_puppy/pull/948)
+- [Add back dropped thinking parts during API responses.](https://github.com/mpfaffenberger/code_puppy/pull/934)
+- [Secure complete JSON schema sanitization.](https://github.com/mpfaffenberger/code_puppy/pull/933)
+
+(3). [Ensured **tools'** file-read process sanitize surrogates in the right way.](https://github.com/mpfaffenberger/code_puppy/pull/756)
+
+(4). Inside big Agentic AI codebase, when aligning inconsistency across 20+ parser calls, [I'd like to:](https://github.com/mpfaffenberger/code_puppy/pull/808)
 - **Split truthy & falsy cases into dedicated parsers**, although original issue suggested a shared parser.
 - Enforce required function booleans for clearness with type safety.
 
-(3). At times, [triage bot may mis-classify](https://github.com/mpfaffenberger/code_puppy/pull/711), **so I make corrections for it.**
+(5). At times, [triage bot may mis-classify](https://github.com/mpfaffenberger/code_puppy/pull/711), **so I make corrections for it.**
 
 
 ## Keep Working 🍶
 
-Seeing Code Puppy use Pydantic's AI core framework, [at times I contribute to Pydantic AI's open source repo.](https://github.com/pydantic/pydantic-ai/pulls?q=is:pr+author:StarsExpress+is:merged)
+Seeing Code Puppy use Pydantic's AI core framework, [I sometimes contribute to Pydantic AI repo.](https://github.com/pydantic/pydantic-ai/pulls?q=is:pr+author:StarsExpress+is:merged)

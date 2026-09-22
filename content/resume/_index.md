@@ -125,11 +125,11 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Shanghai, China</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Streamlined an <strong>NLP-based Keras</strong> classifier for <strong>imbalanced</strong>
+  <li>Streamlined an <strong>NLP-based Keras</strong> classifier for <strong>client's imbalanced</strong>
   SCADA alarms, reaching <strong>82% production accuracy.</strong></li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Designed a <strong>DBSCAN-based anomaly detector</strong> for air compressors <strong>predictive maintenance</strong>,
+  <li>Designed a <strong>DBSCAN-based anomaly detector</strong> for <strong>client's air compressors</strong> predictive maintenance,
   achieving <strong>70% production F1 score</strong> and forecasting failures
   <strong>two weeks in advance despite having only a single feature.</strong></li>
 </ul>
