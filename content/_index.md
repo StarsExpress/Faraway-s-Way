@@ -65,6 +65,15 @@ sidebar:
 .dark .hobby-card__title { color: #e5e5e5; }
 .hobby-card__body-link:hover .hobby-card__title { color: #111827; }
 .dark .hobby-card__body-link:hover .hobby-card__title { color: #fafafa; }
+.hobby-card__tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 0.35rem;
+}
+.dark .hobby-card__tag { color: #737373; }
 .hobby-card__subtitle {
   margin-top: 0.5rem;
   font-size: 0.875rem;
@@ -103,15 +112,15 @@ sidebar:
   <img src="images/profile.jpg" alt="Yuan Jack Yao" style="width: 200px; height: 250px; border-radius: 8px; object-fit: cover; flex-shrink: 0;" />
   <div class="hero-text" style="display: flex; flex-direction: column; gap: 0.75rem; flex: 1; padding-top: 0.25rem;">
     <p style="font-size: 18px; line-height: 1.6;">
-      In Chinese, my first & last name Yuan Yao are placed as『Yao Yuan』.<br/>
-      The adjective faraway in Chinese is written as:『yao yuan』.<br/>
+      In Chinese, my name is placed as『Yao Yuan』.<br/>
+      The adjective faraway in Chinese is also『yao yuan』.<br/>
       Back to good old school days, I had 🎙️homophone nickname "Faraway" 😉
     </p>
     <p style="font-size: 18px; line-height: 1.6;">
-      A big passion of mine is building & delivering AI/ML systems based on flexible plus scalable designs,
-      and clear communication. It was what I did as a full-time Data Scientist in Shanghai, China 🇨🇳<br/><br/>
-      Bringing it into U.S. 🇺🇸, I am eager to deploy user-friendly Gen AI pipelines to closely connect
-      supplies & demands, especially for conversational AI applications. Welcome to chat 🤓
+      A big passion of mine is building & delivering AI/ML systems, and clear communication with clients.<br/>
+      It was all my full-time Data Scientist role in Shanghai, China 🇨🇳<br/><br/>
+      Bringing it into U.S. 🇺🇸, I keep deploying Agentic AI to
+      closely connect AI products & real-time demands. Welcome to chat 🤓
     </p>
   <div class="hero-links" style="display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; font-size: 1rem;">
       <a href="https://github.com/StarsExpress" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 1.2rem;">
@@ -128,15 +137,28 @@ sidebar:
 </div>
 
 
-## Some Hobbies Deployed
+## Some OSS Contributed & Hobbies Deployed
 
 <div class="hobby-cards">
+  <div class="hobby-card">
+    <a class="hobby-card__image-link" href="https://code-puppy.dev" target="_blank" rel="noopener noreferrer">
+      <img src="images/code_puppy_logo.png" alt="🐶Code Puppy" style="background: #111827;">
+    </a>
+    <a class="hobby-card__arrow" href="https://code-puppy.dev" target="_blank" rel="noopener noreferrer" aria-label="Open LinesShines live site">↗</a>
+    <a class="hobby-card__body-link" href="notes/code_puppy/">
+      <div class="hobby-card__tag">Open Source · Coding Agent</div>
+      <div class="hobby-card__title">🐶Code Puppy</div>
+      <div class="hobby-card__subtitle">💻I contribute by bug fixes and performance enhancement.</div>
+    </a>
+  </div>
+  
   <div class="hobby-card">
     <a class="hobby-card__image-link" href="https://www.lines-shines.com" target="_blank" rel="noopener noreferrer">
       <img src="images/lines_shines_logo.png" alt="🏈LinesShines · 鋒光" style="background: #111827;">
     </a>
     <a class="hobby-card__arrow" href="https://www.lines-shines.com" target="_blank" rel="noopener noreferrer" aria-label="Open LinesShines live site">↗</a>
     <a class="hobby-card__body-link" href="linesshines/">
+      <div class="hobby-card__tag">Hobby • NFL Metrics</div>
       <div class="hobby-card__title">🏈LinesShines · 鋒光</div>
       <div class="hobby-card__subtitle">★Customized interactive NFL O & D Lines stats system.</div>
     </a>
@@ -148,6 +170,7 @@ sidebar:
     </a>
     <a class="hobby-card__arrow" href="https://www.jack-s-onlineblackjack.com/" target="_blank" rel="noopener noreferrer" aria-label="Open MonkeyJOB live site">↗</a>
     <a class="hobby-card__body-link" href="monkeyjob/">
+      <div class="hobby-card__tag">Hobby • Game</div>
       <div class="hobby-card__title">🎰MonkeyJOB</div>
       <div class="hobby-card__subtitle">🎰MonkeyJOB: Jack's Online Blackjack — 🎮Casino-style UI web Blackjack game.</div>
     </a>
@@ -159,6 +182,7 @@ sidebar:
     </a>
     <a class="hobby-card__arrow" href="https://starsexpress.github.io/SkyHorse/" target="_blank" rel="noopener noreferrer" aria-label="Open SkyHorse live site">↗</a>
     <a class="hobby-card__body-link" href="skyhorse/">
+      <div class="hobby-card__tag">Hobby • DSA</div>
       <div class="hobby-card__title">🏇天码行空 · SkyHorse</div>
       <div class="hobby-card__subtitle">📙Bilingual &amp; double-indexed tech blog for data structures &amp; algorithms.</div>
     </a>

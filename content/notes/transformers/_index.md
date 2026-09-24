@@ -83,7 +83,7 @@ __Dot product__ comes afterward:
 
 - $P = \text{Softmax}(\frac{ QK^T }{ \sqrt{d_k} }) = R^{n \times n}$: with $\sum_{j = 1}^n P_{i, j} = 1$, $P_{i, j}$ is $i^{th}$ token's __relative proportion of attention__ to $j^{th}$ token.
 
-- $V = R^{n \times d_v}:$ each $V_{i, :} = R^{d_v}$ means $i^{th}$ token's embedded vector.
+- $V = R^{n \times d_v}:$ each $V_{i, :} = R^{d_v}$ means $i^{th}$ token's value representation.
 
 - $PV$ yields a matrix of $R^{n \times d_v}$,
 where each $i^{th}$ row vector is a **weighted sum of token vectors.**
@@ -196,25 +196,23 @@ Although I've never written a research paper 😎
 
 Like I said, to prevent topic deviation, we must look at already written parts.
 
-So in each step, already generated output is naturally our $Q$, $K$ and $V$.
+So in each step, already generated output is naturally the sources for our $Q$, $K$ and $V$.
 
-The adjective "masked" means __only previous steps' output is eligible.__
+The adjective "masked" means __only previous and current steps' output is eligible.__
 
 ### ⚔️Cross-Attention: Make Reference
 
 Where can we let generated output make reference to incorporate relevant content?
 
-Encoder's learned attention, aka encoder stack.
+Encoder's learned attention, aka encoder stack. Thus, this time:
 
-This time, however, several things have changed:
-
-- Encoder stack attention serves as $K$ & $V$, since it gets referenced.
+- Encoder stack attention serves as sources of $K$ & $V$, since it gets referenced.
 
 - We are allowed to look at every step. So no masks at all.
 
 ### Tip: Output Is Topic Regardless
 
-| Attention | Who's $Q$ | Who are $K$, $V$ | Masked |
+| Attention | $Q$ source | $K$ & $V$ sources | Masked |
 |--------|-------------|----------|----------|
 | Masked |  Output. | **Output**. | Yes. |
 | Cross | Output. | __Encoder stack attention__. | No. |
