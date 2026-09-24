@@ -112,8 +112,8 @@ sidebar:
   <img src="images/profile.jpg" alt="Yuan Jack Yao" style="width: 200px; height: 250px; border-radius: 8px; object-fit: cover; flex-shrink: 0;" />
   <div class="hero-text" style="display: flex; flex-direction: column; gap: 0.75rem; flex: 1; padding-top: 0.25rem;">
     <p style="font-size: 18px; line-height: 1.6;">
-      In Chinese, my name is placed as『Yao Yuan』.<br/>
-      The adjective faraway in Chinese is also『yao yuan』.<br/>
+      In Chinese, my name is『Yao Yuan』.<br/>
+      Faraway, in Chinese, is also "yao yuan".<br/>
       Back to good old school days, I had 🎙️homophone nickname "Faraway" 😉
     </p>
     <p style="font-size: 18px; line-height: 1.6;">
@@ -141,14 +141,14 @@ sidebar:
 
 <div class="hobby-cards">
   <div class="hobby-card">
-    <a class="hobby-card__image-link" href="https://code-puppy.dev" target="_blank" rel="noopener noreferrer">
+    <a class="hobby-card__image-link" href="https://github.com/mpfaffenberger/code_puppy/pulls?q=is:pr+author:StarsExpress+is:merged" target="_blank" rel="noopener noreferrer">
       <img src="images/code_puppy_logo.png" alt="🐶Code Puppy" style="background: #111827;">
     </a>
-    <a class="hobby-card__arrow" href="https://code-puppy.dev" target="_blank" rel="noopener noreferrer" aria-label="Open LinesShines live site">↗</a>
+    <a class="hobby-card__arrow" href="https://github.com/mpfaffenberger/code_puppy/pulls?q=is:pr+author:StarsExpress+is:merged" target="_blank" rel="noopener noreferrer" aria-label="Open LinesShines live site">↗</a>
     <a class="hobby-card__body-link" href="notes/code_puppy/">
       <div class="hobby-card__tag">Open Source · Coding Agent</div>
       <div class="hobby-card__title">🐶Code Puppy</div>
-      <div class="hobby-card__subtitle">💻I contribute by bug fixes and performance enhancement.</div>
+      <div class="hobby-card__subtitle">💻I contribute bug fixes and performance enhancement for agentic tools, thread lock, config parser, CPU efficiency.</div>
     </a>
   </div>
   
