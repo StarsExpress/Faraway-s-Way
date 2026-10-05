@@ -1,16 +1,23 @@
 ---
 title: "🏇天码行空 · SkyHorse"
-weight: 2
+weight: 3
 toc: true
 sidebar:
   hide: true
 ---
 
 
+<div class="stack-row">
+
+| **Bilingual Reading** | **Bilingual Code**    | **Framework**      |
+|---------------------|-----------------------|--------------------|
+| 🔵English + 🔴中文    | <img src="https://skillicons.dev/icons?i=python,cpp" /> | **Docusaurus️📜** |
+
+
 <a href="https://starsexpress.github.io/SkyHorse/" target="_blank" rel="noopener noreferrer"
      style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 1.75rem; box-sizing: border-box;
      background: linear-gradient(135deg, #0e7490, #06b6d4);
-     color: #1a1a1a; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 17px;
+     color: #1a1a1a; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px;
      box-shadow: 0 4px 14px rgba(6,182,212,0.45), 0 0 0 1px rgba(165,243,252,0.25) inset;
      transition: transform 0.15s ease, box-shadow 0.15s ease;"
      onmouseover="this.style.transform='translateY(-2px) scale(1.03)'; this.style.boxShadow='0 8px 22px rgba(6,182,212,0.6), 0 0 0 1px rgba(165,243,252,0.35) inset'"
@@ -21,6 +28,7 @@ sidebar:
     <span>↗</span>
 </a>
 
+</div>
 
 <div class="hero-intro" style="display: flex; flex-direction: row; align-items: center; gap: 1rem; width: 100%; margin: 1rem 0 0;">
   <img src="submissions_history.png" alt="Submissions History"
@@ -35,10 +43,6 @@ sidebar:
     </p>
   </div>
 </div>
-
-| **Bilingual Reading** | **Bilingual Code**    | **Framework**      |
-|---------------------|-----------------------|--------------------|
-| 🔵English + 🔴中文    | <img src="https://skillicons.dev/icons?i=python,cpp" /> | **Docusaurus️📜** |
 
 
 ## 📖 Blog Guide
@@ -164,3 +168,20 @@ much like a fine wine that only grows with time 😄
             background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out;">
   <img id="lb-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
 </div>
+
+
+<!-- For stack row. -->
+<style>
+.stack-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+/* Hextra renders the table as display:block; width:100%; margin-block:1.5rem — reset inside this container. */
+.stack-row table { width: auto; margin: 0; }
+.stack-row th, .stack-row td { padding-top: 0.3rem; padding-bottom: 0.3rem; }
+.stack-row td img { height: 32px; width: auto; display: block; }
+.stack-row > p { margin: 0; }
+</style>

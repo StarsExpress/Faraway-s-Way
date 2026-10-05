@@ -36,13 +36,15 @@ Staring at [Code Puppy open source repo](https://github.com/mpfaffenberger/code_
 - [Add back dropped thinking parts during API responses.](https://github.com/mpfaffenberger/code_puppy/pull/934)
 - [Secure complete JSON schema sanitization.](https://github.com/mpfaffenberger/code_puppy/pull/933)
 
-(3). [Ensured **tools'** file-read process sanitize surrogates in the right way.](https://github.com/mpfaffenberger/code_puppy/pull/756)
+(3). [Discovered and added a missing thread lock to protect user responses.](https://github.com/mpfaffenberger/code_puppy/pull/875)
 
-(4). Inside big Agentic AI codebase, when aligning inconsistency across 20+ parser calls, [I'd like to:](https://github.com/mpfaffenberger/code_puppy/pull/808)
+(4). [Ensured **tools'** file-read process sanitize surrogates in the right way.](https://github.com/mpfaffenberger/code_puppy/pull/756)
+
+(5). Inside big Agentic AI codebase, when aligning inconsistency across 20+ parser calls, [I'd like to:](https://github.com/mpfaffenberger/code_puppy/pull/808)
 - **Split truthy & falsy cases into dedicated parsers**, although original issue suggested a shared parser.
 - Enforce required function booleans for clearness with type safety.
 
-(5). At times, [triage bot may mis-classify](https://github.com/mpfaffenberger/code_puppy/pull/711), **so I make corrections for it.**
+(6). At times, [triage bot may mis-classify](https://github.com/mpfaffenberger/code_puppy/pull/711), **so I make corrections for it.**
 
 
 ## Keep Working 🍶

@@ -1,6 +1,6 @@
 ---
 title: 🕯Sudden Thoughts️
-weight: 3
+weight: 5
 toc: false
 breadcrumbs: false
 sidebar:

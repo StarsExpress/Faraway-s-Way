@@ -117,9 +117,9 @@ sidebar:
       Back to good old school days, I had 🎙️homophone nickname "Faraway" 😉
     </p>
     <p style="font-size: 18px; line-height: 1.6;">
-      A big passion of mine is building & delivering AI/ML systems, and clear communication with clients.<br/>
-      It was all my full-time Data Scientist role in Shanghai, China 🇨🇳<br/><br/>
-      Bringing it into U.S. 🇺🇸, I keep deploying Agentic AI to
+      A big passion of mine is building & delivering AI/ML systems, and clear communication with clients.
+      It was all my full-time Data Scientist role in Shanghai, China.<br/><br/>
+      Bringing it into U.S., I keep deploying Agentic AI to
       closely connect AI products & real-time demands. Welcome to chat 🤓
     </p>
   <div class="hero-links" style="display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; font-size: 1rem;">
@@ -158,9 +158,9 @@ sidebar:
     </a>
     <a class="hobby-card__arrow" href="https://www.lines-shines.com" target="_blank" rel="noopener noreferrer" aria-label="Open LinesShines live site">↗</a>
     <a class="hobby-card__body-link" href="linesshines/">
-      <div class="hobby-card__tag">Hobby • NFL Metrics</div>
+      <div class="hobby-card__tag">Hobby • NFL Metrics • PWA</div>
       <div class="hobby-card__title">🏈LinesShines · 鋒光</div>
-      <div class="hobby-card__subtitle">★Customized interactive NFL O & D Lines stats system.</div>
+      <div class="hobby-card__subtitle">★Installable interactive NFL O & D Lines stats app — iOS, Android, macOS, Windows.</div>
     </a>
   </div>
 
@@ -170,9 +170,9 @@ sidebar:
     </a>
     <a class="hobby-card__arrow" href="https://www.jack-s-onlineblackjack.com/" target="_blank" rel="noopener noreferrer" aria-label="Open MonkeyJOB live site">↗</a>
     <a class="hobby-card__body-link" href="monkeyjob/">
-      <div class="hobby-card__tag">Hobby • Game</div>
+      <div class="hobby-card__tag">Hobby • Game • PWA</div>
       <div class="hobby-card__title">🎰MonkeyJOB</div>
-      <div class="hobby-card__subtitle">🎰MonkeyJOB: Jack's Online Blackjack — 🎮Casino-style UI web Blackjack game.</div>
+      <div class="hobby-card__subtitle">🎰Installable online Blackjack game — iOS, Android, macOS, Windows.</div>
     </a>
   </div>
 
