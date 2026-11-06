@@ -1,11 +1,11 @@
 ---
 title: LSTM
-weight: 3
+weight: 4
 math: true
 sidebar:
   hide: true
 cover: "/notes-cover/lstm.png"
-subtitle: "How memories are bonded"
+subtitle: "Bonded Memories"
 tags: ["Deep Learning", "NLP", "Math"]
 ---
 

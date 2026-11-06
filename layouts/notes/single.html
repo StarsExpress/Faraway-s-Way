@@ -12,6 +12,9 @@
             {{ partial "components/page-context-menu" . }}
           </div>
           {{ end }}
+          {{ with .Params.subtitle }}
+          <p class="hx:text-lg hx:text-gray-500 hx:dark:text-gray-400 hx:mt-1 hx:mb-6">{{ . }}</p>
+          {{ end }}
           {{ .Content }}
         </div>
         {{ partial "components/last-updated.html" . }}

@@ -1,11 +1,11 @@
 ---
 title: LeetCode Wiki
-weight: 4
+weight: 6
 toc: true
 sidebar:
   hide: true
 cover: "/notes-cover/leetcode_wiki.png"
-subtitle: "Tutorials writing"
+subtitle: "Tutorials Writing"
 tags: ["OSS", "Data Structures", "Algorithms"]
 ---
 
