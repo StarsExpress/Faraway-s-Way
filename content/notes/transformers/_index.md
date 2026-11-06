@@ -5,7 +5,7 @@ math: true
 sidebar:
   hide: true
 cover: "/notes-cover/transformers.png"
-subtitle: "Hood under attention"
+subtitle: "Hood Under Attention"
 tags: ["Gen AI", "LLMs", "Math"]
 ---
 
@@ -17,6 +17,46 @@ Some feelings about how can these attention-powered transformers work so well in
 Natural language, or any sequence data, is literally like a more advanced Solitaire game.
 
 Each position can — and should — look way beyond just the previous position.
+
+### 🧱Encoder Diagram
+
+Encoder reads the whole source at once, __without any mask__. Then it hands its output over as $K$ & $V$ for decoder to reference.
+
+<div class="dg-fig">
+<svg viewBox="0 0 640 460" role="img" aria-label="Encoder block from bottom to top: multi-head self-attention without a mask, add and norm, feed-forward, add and norm, repeated N times. The encoder output becomes K and V for cross-attention in every decoder block.">
+<defs><marker id="dg-arrow-e" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="currentColor" stroke-opacity=".7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect class="dg-kv" x="110" y="20" width="280" height="48" rx="6"/>
+<text class="dg-t" x="250" y="37">Encoder output</text>
+<text class="dg-s" x="250" y="54">K, V for cross-attention</text>
+<line class="dg-line" x1="392" y1="44" x2="458" y2="44" marker-end="url(#dg-arrow-e)"/>
+<text class="dg-s dg-l" x="466" y="36">To cross-attention of</text>
+<text class="dg-s dg-l" x="466" y="52">every decoder block</text>
+<line class="dg-line" x1="250" y1="130" x2="250" y2="70" marker-end="url(#dg-arrow-e)"/>
+<rect class="dg-cont" x="70" y="96" width="360" height="246" rx="12"/>
+<text class="dg-t dg-l" x="88" y="116">Encoder block × N</text>
+<rect class="dg-box" x="110" y="130" width="280" height="26" rx="6"/>
+<text x="250" y="143">Add &amp; Norm</text>
+<line class="dg-line" x1="250" y1="174" x2="250" y2="158" marker-end="url(#dg-arrow-e)"/>
+<rect class="dg-box" x="110" y="174" width="280" height="40" rx="6"/>
+<text class="dg-t" x="250" y="194">Feed-forward</text>
+<line class="dg-line" x1="250" y1="232" x2="250" y2="216" marker-end="url(#dg-arrow-e)"/>
+<rect class="dg-box" x="110" y="232" width="280" height="26" rx="6"/>
+<text x="250" y="245">Add &amp; Norm</text>
+<line class="dg-line" x1="250" y1="276" x2="250" y2="260" marker-end="url(#dg-arrow-e)"/>
+<rect class="dg-attn" x="110" y="276" width="280" height="48" rx="6"/>
+<text class="dg-t" x="250" y="293">Multi-head self-attention</text>
+<text class="dg-s" x="250" y="310">Q, K, V: all from input · no mask</text>
+<line class="dg-line" x1="250" y1="364" x2="250" y2="326" marker-end="url(#dg-arrow-e)"/>
+<rect class="dg-box" x="110" y="364" width="280" height="34" rx="6"/>
+<text class="dg-t" x="250" y="381">Embedding + positional encoding</text>
+<line class="dg-line" x1="250" y1="426" x2="250" y2="400" marker-end="url(#dg-arrow-e)"/>
+<text class="dg-s" x="250" y="438">Input tokens, all at once</text>
+<text class="dg-s dg-l" x="460" y="186">Runs once, all</text>
+<text class="dg-s dg-l" x="460" y="202">positions in parallel</text>
+<text class="dg-s dg-l" x="460" y="292">No mask: each token</text>
+<text class="dg-s dg-l" x="460" y="308">sees every position</text>
+</svg>
+</div>
 
 ### 3️⃣ Roles Inside Context
 
@@ -33,66 +73,11 @@ matching results to decide how much each $V$ plays?
 
 - $Q = R^{n \times d_k}, K = R^{n \times d_k}, V = R^{n \times d_v}.$
 
-- $\text{Attention}(Q, K, V) = \text{Softmax} \frac{ QK^T }{ \sqrt{d_k} } V$.
+- $\text{Attention}(Q, K, V) = \text{Softmax} (\frac{ QK^T }{ \sqrt{d_k} }) V$.
 
 - $(QK^T)_{i, j} = Q_{i, :} \cdot (k_{j, :})^T$.
 
-#### ☢️HIM — Heavy Incoming Math
-
-Suppose all entries of $Q$ and $K$ are i.i.d. from a distribution of mean 0 and variance 1, implying several things:
-
-- $E[Q_{i, h} \times K_{j, h}] = Cov(Q_{i, h}, K_{j, h}) + E[Q_{i, h}] \times E[K_{j, h}] = 0 + 0 \times 0 = 0.$
-
-- $\forall a, b \in R, E[Q_{i, h}^a \times K_{j, h}^b] = \int \int Q_{i, h}^a K_{j, h}^b f(q, k) \; dq \; dk = \int \int Q_{i, h}^a K_{j, h}^b f_Q(q) f_K(k) \; dq \; dk = \int Q_{i, h}^a f_Q(q) dq \times \int K_{j, h}^b f_K(k) dk = E[Q_{i, h}^a] \times E[K_{j, h}^b]$.
-
-- ☝️$f(q, k) = f_Q(q) f_K(k)$ decouples into an implied fact — $Q^2$ and $K^2$ are independent.
-
-And this heaviest one:
-
-$Var(Q_{i, h} \times K_{j, h}) = E[(Q_{i, h} \times K_{j, h})^2] - E[Q_{i, h} \times K_{j, h}]^2$
-
-= $E[Q_{i, h}^2 \times K_{j, h}^2] - 0^2 = E[Q_{i, h}^2] \times E[K_{j, h}^2] = 1 \times 1 = 1.$
-
-So we can see that our $(QK^T)_{i, j}$ distribution has:
-
-#### I. Expectation: 0
-
-$E[(QK^T)_{i, j}] = E[Q_{i, :} \cdot (k_{j, :})^T] = E[\sum_{h = 1}^{d_k} Q_{i, h} \times K_{j ,h}]$
-
-= $\underbrace{ \sum_{h = 1}^{d_k} E[Q_{i, h} \times K_{j ,h}] = \sum_{h = 1}^{d_k} E[Q_{i, h}] \times E[K_{j ,h}] }_{\text{All entries of Q and K are } \textbf{independent.}}$
-
-= $\sum_{h = 1}^{d_k} 0 \times 0 = 0$, so $E[QK^T] = 0$.
-
-#### II. Variance: $d_k$
-
-$Var((QK^T)_{i, j}) = Var(Q_{i, :} \cdot (k_{j, :})^T)$
-
-= $\underbrace{ Var(\sum_{h = 1}^{d_k} Q_{i, h} \times K_{j ,h}) = \sum_{h = 1}^{d_k} Var(Q_{i, h} \times K_{j ,h}) }_{ \text{All entries of Q and K are } \textbf{independent so } Cov(Q_{i, h}, K_{j ,h}) = 0.}$
-
-= $\sum_{h = 1}^{d_k} 1 = d_k$, so $Var(QK^T) = d_k$.
-
-#### III. Assembly
-
-**Scale** $QK^T$ by $\frac{1}{\sqrt{d_k}}$ to ensure $\text{Var}(\frac{ QK^T }{ \sqrt{d_k} }) = 1$:
-
-- When input follows a less extreme distribution, Softmax output tends to be less spiky.
-
-- Less spiky means less one-hot encoding — __away from saturated vanishing-gradients areas.__
-
-__Dot product__ comes afterward:
-
-- $P = \text{Softmax}(\frac{ QK^T }{ \sqrt{d_k} }) = R^{n \times n}$: with $\sum_{j = 1}^n P_{i, j} = 1$, $P_{i, j}$ is $i^{th}$ token's __relative proportion of attention__ to $j^{th}$ token.
-
-- $V = R^{n \times d_v}:$ each $V_{i, :} = R^{d_v}$ means $i^{th}$ token's value representation.
-
-- $PV$ yields a matrix of $R^{n \times d_v}$,
-where each $i^{th}$ row vector is a **weighted sum of token vectors.**
-
-- Weights are based on **$i^{th}$ token's attention to all $n$ tokens.**
-
-Be sure to set `axis=-1` when doing Softmax. Along columns 😉😏
-
-#### IV. 🤿Mask If Required
+#### 🤿Mask If Required
 
 After doing $\frac{ QK^T }{ \sqrt{d_k} }$, you have a square matrix $M = R^{n \times n}$,
 showing how much relative attention each token pays to other tokens.
@@ -115,6 +100,21 @@ qk_product.masked_fill_(mask, float("-inf"))
 ```
 
 ⬆️This code helps us mask out all upper triangular entries before entering Softmax.
+
+#### 🗞️__Dot product__ Comes
+
+- $P = \text{Softmax}(\frac{ QK^T }{ \sqrt{d_k} }) = R^{n \times n}$: with $\sum_{j = 1}^n P_{i, j} = 1$, $P_{i, j}$ is $i^{th}$ token's __relative proportion of attention__ to $j^{th}$ token.
+
+- Be sure to set `axis=-1` when doing Softmax. Along columns 😉😏
+
+- $V = R^{n \times d_v}:$ each $V_{i, :} = R^{d_v}$ means $i^{th}$ token's value representation.
+
+- $PV$ yields a matrix of $R^{n \times d_v}$,
+where each $i^{th}$ row vector is a **weighted sum of token vectors.**
+
+- Weights are based on **$i^{th}$ token's attention to all $n$ tokens.**
+
+#### 🧮More Softmax Details: [Visit](/notes/softmax_saturation/)
 
 ### Stage ⓶: MHA — Multi-Head
 
@@ -192,6 +192,79 @@ Like writing a research paper:
 
 Although I've never written a research paper 😎
 
+<style>
+.dg-fig { max-width: 640px; margin: 1.5rem auto; }
+.dg-fig svg { width: 100%; height: auto; display: block; }
+.dg-fig .dg-box { fill: rgba(127,127,127,.10); stroke: currentColor; stroke-opacity: .45; stroke-width: 1; }
+.dg-fig .dg-attn { fill: rgba(139,92,246,.16); stroke: #8b5cf6; stroke-width: 1.2; }
+.dg-fig .dg-kv { fill: rgba(20,184,166,.16); stroke: #14b8a6; stroke-width: 1.2; }
+.dg-fig .dg-opt { stroke-dasharray: 5 4; }
+.dg-fig .dg-cont { fill: none; stroke: currentColor; stroke-opacity: .35; stroke-dasharray: 5 4; }
+.dg-fig .dg-line { stroke: currentColor; stroke-opacity: .55; stroke-width: 1.4; fill: none; }
+.dg-fig .dg-leader { stroke: #14b8a6; stroke-width: 1.2; stroke-dasharray: 3 3; fill: none; }
+.dg-fig text { fill: currentColor; font-size: 12px; text-anchor: middle; dominant-baseline: central; }
+.dg-fig .dg-t { font-size: 14px; font-weight: 500; }
+.dg-fig .dg-s { opacity: .7; }
+.dg-fig .dg-l { text-anchor: start; }
+</style>
+
+
+### 🧱Decoder Diagram
+
+Decoder writes one token at a time:
+- Dashed parts — cross attention related things — exist only in encoder-decoder models.
+- Decoder-only LLMs keep just masked self-attention.
+
+Teal boxes mark where $K$ & $V$ come from or get stored.
+
+<div class="dg-fig">
+<svg viewBox="0 0 640 576" role="img" aria-label="Decoder block from bottom to top: masked self-attention, add and norm, cross-attention, add and norm, feed-forward, add and norm. Cross-attention takes K and V from the encoder stack output. Masked self-attention keys and values are stored in the KV cache.">
+<defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="currentColor" stroke-opacity=".7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text class="dg-s" x="250" y="14">Next-token probabilities</text>
+<line class="dg-line" x1="250" y1="48" x2="250" y2="24" marker-end="url(#dg-arrow)"/>
+<rect class="dg-box" x="110" y="48" width="280" height="34" rx="6"/>
+<text class="dg-t" x="250" y="65">Linear + softmax</text>
+<line class="dg-line" x1="250" y1="138" x2="250" y2="84" marker-end="url(#dg-arrow)"/>
+<rect class="dg-cont" x="70" y="104" width="360" height="356" rx="12"/>
+<text class="dg-t dg-l" x="88" y="124">Decoder block × N</text>
+<rect class="dg-box" x="110" y="138" width="280" height="26" rx="6"/>
+<text x="250" y="151">Add &amp; Norm</text>
+<line class="dg-line" x1="250" y1="182" x2="250" y2="166" marker-end="url(#dg-arrow)"/>
+<rect class="dg-box" x="110" y="182" width="280" height="40" rx="6"/>
+<text class="dg-t" x="250" y="202">Feed-forward</text>
+<line class="dg-line" x1="250" y1="240" x2="250" y2="224" marker-end="url(#dg-arrow)"/>
+<rect class="dg-box dg-opt" x="110" y="240" width="280" height="26" rx="6"/>
+<text x="250" y="253">Add &amp; Norm</text>
+<line class="dg-line" x1="250" y1="284" x2="250" y2="268" marker-end="url(#dg-arrow)"/>
+<rect class="dg-attn dg-opt" x="110" y="284" width="280" height="48" rx="6"/>
+<text class="dg-t" x="250" y="301">Cross-attention</text>
+<text class="dg-s" x="250" y="318">Q: decoder · K, V: encoder</text>
+<line class="dg-line" x1="250" y1="350" x2="250" y2="334" marker-end="url(#dg-arrow)"/>
+<rect class="dg-box" x="110" y="350" width="280" height="26" rx="6"/>
+<text x="250" y="363">Add &amp; Norm</text>
+<line class="dg-line" x1="250" y1="394" x2="250" y2="378" marker-end="url(#dg-arrow)"/>
+<rect class="dg-attn" x="110" y="394" width="280" height="48" rx="6"/>
+<text class="dg-t" x="250" y="411">Masked self-attention</text>
+<text class="dg-s" x="250" y="428">Q, K, V: all from output so far</text>
+<line class="dg-line" x1="250" y1="482" x2="250" y2="444" marker-end="url(#dg-arrow)"/>
+<rect class="dg-box" x="110" y="482" width="280" height="34" rx="6"/>
+<text class="dg-t" x="250" y="499">Embedding + positional encoding</text>
+<line class="dg-line" x1="250" y1="544" x2="250" y2="520" marker-end="url(#dg-arrow)"/>
+<text class="dg-s" x="250" y="556">Output tokens generated so far</text>
+<rect class="dg-kv" x="460" y="284" width="160" height="48" rx="6"/>
+<text class="dg-t" x="540" y="301">Encoder output</text>
+<text class="dg-s" x="540" y="318">K, V computed once</text>
+<line class="dg-line" x1="458" y1="308" x2="392" y2="308" marker-end="url(#dg-arrow)"/>
+<text class="dg-s" x="410" y="296">K, V</text>
+<text class="dg-s dg-l" x="460" y="352">Dashed: dropped in</text>
+<text class="dg-s dg-l" x="460" y="368">decoder-only LLMs</text>
+<rect class="dg-kv" x="460" y="394" width="160" height="48" rx="6"/>
+<text class="dg-t" x="540" y="411">KV cache</text>
+<text class="dg-s" x="540" y="428">grows each step</text>
+<line class="dg-leader" x1="458" y1="418" x2="392" y2="418"/>
+</svg>
+</div>
+
 ### 🎭Masked Attention: No Deviation
 
 Like I said, to prevent topic deviation, we must look at already written parts.
@@ -222,7 +295,9 @@ Encoder's learned attention, aka encoder stack. Thus, this time:
 
 Now comes a discussion: can we optimize time or space complexities?
 
-This brings up a quite fundamental topic indeed. Need a whole new page.
+This brings up a quite fundamental topic indeed: KV Cache.
+
+It's mentioned in decoder diagram above. For details, please see: [KV Cache](/notes/kv_cache/).
 
 
 ## 4. Positional Encoding
