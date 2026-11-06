@@ -101,7 +101,7 @@ qk_product.masked_fill_(mask, float("-inf"))
 
 ⬆️This code helps us mask out all upper triangular entries before entering Softmax.
 
-#### 🗞️__Dot product__ Comes
+#### 🗞️Dot Product Comes
 
 - $P = \text{Softmax}(\frac{ QK^T }{ \sqrt{d_k} }) = R^{n \times n}$: with $\sum_{j = 1}^n P_{i, j} = 1$, $P_{i, j}$ is $i^{th}$ token's __relative proportion of attention__ to $j^{th}$ token.
 
@@ -291,6 +291,38 @@ Encoder's learned attention, aka encoder stack. Thus, this time:
 | Cross | Output. | __Encoder stack attention__. | No. |
 
 
+### 🎯Output Head: Linear & Softmax
+
+Decoder diagram's top is a "Linear + softmax" box: it turns each position's vector into a probability over whole vocabularies.
+
+- Decoder stack output: $R^{n \times d_{model}}$.
+
+- Linear layer uses $W \in R^{d_{model} \times |V|}$ to transform decoder stack output into logits of $R^{n \times |V|}$.
+
+- Softmax along vocabularies index `axis=-1` makes each row of $R^{n \times |V|}$ sum to 1.
+
+#### Training: Everything Matters
+
+Each row compares to its true next token, tracking loss such as cross-entropy. Padding positions are left out of loss calculations.
+
+#### Inference: Just Last One Matters
+
+Only **last row** matters, since earlier tokens are already fixed. Each decode step:
+
+- Takes $|V|$ probabilities' last row.
+- **Decodes**: choose next token from them — argmax, top k, temperature, etc.
+- Appends it to already generated sequence.
+- Stops at EOS or a length limit.
+
+#### Which Row Is Last? 🧐
+
+"Last row" isn't always the last real token, depending on:
+
+- **Right padding** — pads the future, so causal mask already hides them. But sequence $i$'s last real token is at index $L_i - 1$, found by attention-mask length.
+
+- **Left padding** — pads the past. Last column is always a real token. But pads are now "past" and thus visible, so attention mask must hide them, with position ids starting from first real token.
+
+
 ## 3. KV Cache
 
 Now comes a discussion: can we optimize time or space complexities?
@@ -301,10 +333,6 @@ It's mentioned in decoder diagram above. For details, please see: [KV Cache](/no
 
 
 ## 4. Positional Encoding
-
-> We chose this function because we hypothesized it would allow the model to
-easily learn to attend by relative positions, since for any fixed offset
-$k$, $PE_{pos + k}$ can be represented as a linear function of $PE_{pos}$.
 
 "Attention Is All You Need" uses $sin$ and $cos$ to encode positions.
 
