@@ -64,9 +64,14 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Atlanta, Georgia</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li><strong>Designed &amp; deployed assignments</strong> for an 80-student course:
-  <strong>LoRA SFT + DPO</strong> with unit-test autograder; <strong>RAG with cross-session memory</strong>;
-  held weekly office hours to guide students for debugging.</li>
+  <li>Deployed a <strong>Voice Agent</strong> assignment for an 80-student course: EOS→ASR→LLM→TTS
+  pipeline with <strong>4% ASR word error rate</strong> and EOS-to-first-audio p50 ≤ 275 ms, p95 ≤ 417 ms
+  across four LLMs vs. 800 ms benchmark.</li>
+</ul>
+<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
+  <li>Designed <strong>RAG with cross-session memory</strong> and <strong>LoRA SFT + DPO</strong>
+  (unit-test autograder) assignments; debugged <strong>AI eval harness</strong> so auto evals separate
+  strong from weak submissions; held weekly office hours for student debugging.</li>
 </ul>
 
 <br>
@@ -84,21 +89,23 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Bentonville, Arkansas</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Integrated <strong>LLM &amp; RAG with filtered vector search</strong> into dashboard for
-  camera/area/site-level metadata queries, with <strong>cosine similarity &amp; LLMs-as-a-Judge</strong>
-  against hallucinations, and an <strong>embedding signature</strong> verifying Milvus ingestion &amp;
-  retrieval use the identical embedding model, <strong>eliminating silent retrieval degradation</strong>.</li>
+  <li>Integrated <strong>LLM &amp; RAG with filtered vector search</strong> into a dashboard for
+  camera/area/site-level metadata queries, guarding against hallucinations with cosine similarity &amp;
+  LLMs-as-a-Judge; an embedding signature verifies Milvus ingestion &amp; retrieval use the identical
+  embedding model, <strong>eliminating silent retrieval degradation</strong>.</li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Architected a <strong>Cassandra-sourced</strong> data layer feeding <strong>PostgreSQL</strong>
+  <li>Architected a <strong>Cassandra-sourced data layer</strong> feeding <strong>PostgreSQL</strong>
   and <strong>Milvus</strong>, regenerable after data loss.</li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Deployed Docker &amp; Kubernetes CronJobs for <strong>1,245 in-store cameras across 9 sites</strong>:
-  monthly Gemini Vision area classification with <strong>full-fleet inference in 13 minutes</strong>
-  through high-throughput concurrency, glibc malloc arena caps and image pre-downsampling to
-  <strong>improve reliability by eliminating OOM</strong>; hourly asynchronous snapshot capture to Azure,
-  cutting <strong>50% time</strong> and <strong>75% storage cost</strong> via 7-day TTL.</li>
+  <li>Deployed Docker &amp; Kubernetes CronJobs for 1,245 in-store cameras across 9 sites: monthly
+  Gemini Vision area classification of the <strong>full fleet in 13 minutes</strong> via high-throughput
+  concurrency, with glibc malloc arena caps and image pre-downsampling <strong>eliminating OOM failures</strong>.</li>
+</ul>
+<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
+  <li>Optimized hourly <strong>asynchronous snapshot capture</strong> to Azure, cutting
+  <strong>50% time</strong> and <strong>75% storage cost</strong> via 7-day TTL.</li>
 </ul>
 
 <br>
@@ -116,18 +123,14 @@ sidebar:
   <span style="font-size: 15px; font-style: italic;">Shanghai, China</span>
 </div>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Streamlined <strong>NLP classifier</strong> for <strong>client's imbalanced</strong>
-  SCADA alarms, reaching <strong>82% production accuracy</strong>.</li>
+  <li>Streamlined <strong>NLP classifier</strong> for client's imbalanced SCADA alarms, reaching
+  <strong>82% production accuracy</strong>.</li>
 </ul>
 <ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Designed a <strong>DBSCAN anomaly detector</strong> for <strong>client's</strong> air compressors predictive maintenance,
-  achieving <strong>70% production F1 score</strong> and forecasting failures
-  <strong>two weeks in advance despite having only a single feature</strong>.</li>
+  <li>Designed a <strong>DBSCAN anomaly detector</strong> for client's air compressors predictive maintenance,
+  achieving <strong>70% production F1 score</strong> and forecasting failures <strong>two weeks in advance</strong>
+  despite having only a single feature.</li>
 </ul>
-<ul style="margin: 0 0 20px 1.2rem; padding: 0; font-size: 15px; line-height: 1.6;">
-  <li>Accelerated clustering on 12 air compressors with Joblib, <strong>reducing runtime by 20% in Linux CronJob.</strong></li>
-</ul>
-
 <br>
 
 [//]: # (Pramerica Life Insurance.)
